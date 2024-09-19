@@ -1,0 +1,7 @@
+include: ../_ghigliottinai_yaml
+
+task: itabench_ghigliottinai_mc
+
+doc_to_text: "Date le parole: {{w1}}, {{w2}}, {{w3}}, {{w4}}, {{w5}}\nDomanda: Quale tra i seguenti concetti è quello che lega le parole date?\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nRisposta:"
+doc_to_target: label
+doc_to_choice: ["A", "B", "C", "D"]

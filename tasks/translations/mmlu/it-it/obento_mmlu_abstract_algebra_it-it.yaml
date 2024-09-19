@@ -1,0 +1,7 @@
+"description": "Le seguenti sono domande a scelta multipla (con risposte) su Algebra\
+  \ Astratta.\n\n"
+"include": "../_mmlu_yaml"
+"process_docs": !function "utils.process_docs_cloze_abstract_algebra"
+"tag":
+- "itabench_mmlu_stem_it-it_tasks"
+"task": "itabench_mmlu_abstract_algebra_it-it"

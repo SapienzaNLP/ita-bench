@@ -1,0 +1,19 @@
+group: itabench_trans_en-en
+
+task:
+  - itabench_arc_challenge_en-en
+  - itabench_arc_easy_en-en
+  - itabench_boolq_en-en
+  - itabench_boolq_with_passages_en-en
+  - itabench_gsm8k_multichoice_en-en
+  - itabench_hellaswag_en-en
+  - itabench_mmlu_en-en
+  - itabench_piqa_en-en
+  - itabench_sciq_en-en
+  - itabench_sciq_with_passages_en-en
+  - itabench_truthful_qa_mc1_en-en
+  - itabench_truthful_qa_mc2_en-en
+  - itabench_winogrande_en-en
+
+metadata:
+  version: 1.0

@@ -1,0 +1,20 @@
+dataset_path: sapienzanlp/prelearn
+dataset_name: physics
+output_type: multiple_choice
+
+description: "Dati due concetti A e B, indica se il primo concetto è un prerequisito per il secondo.\nIl concetto A è prerequisito per il concetto B, se per comprendere B devi prima aver compreso A.\nI seguenti concetti appartengono al dominio: Fisica.\n\n"
+
+training_split: train
+validation_split: train
+test_split: test
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0

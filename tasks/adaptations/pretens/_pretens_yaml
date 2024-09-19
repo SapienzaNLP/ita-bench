@@ -1,0 +1,19 @@
+dataset_path: sapienzanlp/pretens
+output_type: multiple_choice
+
+description: "Indica se le seguenti frasi hanno senso.\n\n"
+
+training_split: train
+validation_split: train
+test_split: test
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0

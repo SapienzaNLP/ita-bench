@@ -1,0 +1,4 @@
+include: ../_boolq_yaml
+task: itabench_boolq_with_passages_it-it
+
+process_docs: !function ../utils.process_docs_with_passages_it_it

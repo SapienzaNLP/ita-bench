@@ -1,0 +1,7 @@
+include: ../_pretens_yaml
+
+task: itabench_pretens_cloze
+
+doc_to_text: "{{text}}\nLa frase precedente"
+doc_to_target: label
+doc_to_choice: ["non ha senso", "ha senso"]

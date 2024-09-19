@@ -1,0 +1,4 @@
+include: ../_winogrande_yaml
+task: itabench_winogrande_en-en
+
+process_docs: !function ../utils.process_docs_en_en

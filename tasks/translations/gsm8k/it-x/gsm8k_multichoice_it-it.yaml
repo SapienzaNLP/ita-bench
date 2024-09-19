@@ -1,0 +1,4 @@
+include: ../_gsm8k_multichoice_yaml
+task: itabench_gsm8k_multichoice_it-it
+
+process_docs: !function ../utils.process_docs_it_it

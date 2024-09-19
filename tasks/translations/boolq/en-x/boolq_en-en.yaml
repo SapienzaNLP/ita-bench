@@ -1,0 +1,4 @@
+include: ../_boolq_yaml
+task: itabench_boolq_en-en
+
+process_docs: !function ../utils.process_docs_en_en

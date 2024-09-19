@@ -1,0 +1,7 @@
+"description": "The following are multiple choice questions (with answers) about Security\
+  \ Studies.\n\n"
+"include": "../_mmlu_yaml"
+"process_docs": !function "utils.process_docs_multichoice_security_studies"
+"tag":
+- "itabench_mmlu_social_sciences_en-en_tasks"
+"task": "itabench_mmlu_security_studies_en-en"

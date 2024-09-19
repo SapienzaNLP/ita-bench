@@ -1,0 +1,6 @@
+include: ../_prelearn_data_mining_yaml
+
+task: itabench_prelearn_data_mining_mc
+doc_to_text: "Domanda: il concetto \"{{concept_B}}\" è un prerequisito per la comprensione del concetto \"{{concept_A}}\"? Rispondi sì o no:"
+doc_to_target: target
+doc_to_choice: ["no", "sì"]

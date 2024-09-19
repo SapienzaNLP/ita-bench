@@ -1,0 +1,4 @@
+include: ../_sciq_yaml
+task: itabench_sciq_en-en
+
+process_docs: !function ../utils.process_docs_en_en

@@ -1,0 +1,4 @@
+include: ../_hellaswag_yaml
+task: itabench_hellaswag_it-en
+
+process_docs: !function ../utils.process_docs_it_en

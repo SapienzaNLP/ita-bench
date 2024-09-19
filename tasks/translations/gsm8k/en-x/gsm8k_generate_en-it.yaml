@@ -1,0 +1,4 @@
+include: ../_gsm8k_generation_yaml
+task: itabench_gsm8k_generation_en-it
+
+process_docs: !function ../utils.process_docs_with_explanations_en_it

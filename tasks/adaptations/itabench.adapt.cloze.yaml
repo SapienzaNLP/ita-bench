@@ -1,0 +1,14 @@
+group: itabench_adapt_cloze
+
+task:
+  - itabench_ami_behaviour_cloze
+  - itabench_ami_synth_cloze
+  - itabench_ghigliottinai_cloze
+  - itabench_nermud_adg_cloze
+  - itabench_nermud_wn_cloze
+  - itabench_prelearn_data_mining_cloze
+  - itabench_prelearn_geometry_cloze
+  - itabench_prelearn_physics_cloze
+  - itabench_prelearn_precalculus_cloze
+  - itabench_pretens_cloze
+  - itabench_wic_cloze

@@ -1,0 +1,4 @@
+include: ../_truthful_qa_mc1_yaml
+task: itabench_truthful_qa_mc1_en-en
+
+process_docs: !function ../utils.process_docs_en_en

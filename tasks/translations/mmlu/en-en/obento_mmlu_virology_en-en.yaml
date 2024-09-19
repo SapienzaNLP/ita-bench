@@ -1,0 +1,7 @@
+"description": "The following are multiple choice questions (with answers) about Virology.\n\
+  \n"
+"include": "../_mmlu_yaml"
+"process_docs": !function "utils.process_docs_multichoice_virology"
+"tag":
+- "itabench_mmlu_other_en-en_tasks"
+"task": "itabench_mmlu_virology_en-en"

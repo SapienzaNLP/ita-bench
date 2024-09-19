@@ -1,0 +1,19 @@
+dataset_path: sapienzanlp/wic
+output_type: multiple_choice
+
+description: "Date due frasi, che contengono un lemma in comune, indica se tale lemma ha lo stesso significato in entrambe le frasi.\n\n"
+
+training_split: validation
+validation_split: validation
+test_split: test
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0

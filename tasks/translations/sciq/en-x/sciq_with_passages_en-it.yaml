@@ -1,0 +1,4 @@
+include: ../_sciq_yaml
+task: itabench_sciq_with_passages_en-it
+
+process_docs: !function ../utils.process_docs_with_passages_en_it

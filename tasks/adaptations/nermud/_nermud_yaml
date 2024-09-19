@@ -1,0 +1,19 @@
+dataset_path: sapienzanlp/nermud
+output_type: multiple_choice
+
+description: "Data una frase e un'entità, indica se tale entità rappresenta un luogo, un'organizzazione o una persona.\n\n"
+
+training_split: train
+validation_split: train
+test_split: test
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0

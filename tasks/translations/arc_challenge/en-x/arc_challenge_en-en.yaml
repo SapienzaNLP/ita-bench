@@ -1,0 +1,4 @@
+include: ../_arc_challenge_yaml
+task: itabench_arc_challenge_en-en
+
+process_docs: !function ../utils.process_docs_en_en

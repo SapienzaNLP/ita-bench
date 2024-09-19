@@ -1,0 +1,4 @@
+include: ../_arc_easy_yaml
+task: itabench_arc_easy_en-it
+
+process_docs: !function ../utils.process_docs_en_it

@@ -1,0 +1,7 @@
+"description": "Le seguenti sono domande a scelta multipla (con risposte) su Filosofia.\n\
+  \n"
+"include": "../_mmlu_yaml"
+"process_docs": !function "utils.process_docs_cloze_philosophy"
+"tag":
+- "itabench_mmlu_humanities_it-it_tasks"
+"task": "itabench_mmlu_philosophy_it-it"
