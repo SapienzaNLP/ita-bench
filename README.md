@@ -1,8 +1,8 @@
-# ItaBench
-This is the [Sapienza NLP](https://github.com/sapienzanlp) GitHub repository for ItaBench (Italian Benchmarks), **a benchmark suite for the evaluation of Large Language Models (LLMs) on the Italian language**. ItaBench is designed to evaluate the performance of LLMs on a variety of tasks, including question answering, commonsense reasoning, mathematical capabilities, named entity recognition, reading comprehension, and others. 
+# ITA-Bench
+This is the [Sapienza NLP](https://github.com/sapienzanlp) GitHub repository for ITA-Bench (Italian Benchmarks), **a benchmark suite for the evaluation of Large Language Models (LLMs) on the Italian language**. ITA-Bench is designed to evaluate the performance of LLMs on a variety of tasks, including question answering, commonsense reasoning, mathematical capabilities, named entity recognition, reading comprehension, and others. 
 
-## Datasets included in ItaBench
-ItaBench includes a variety of datasets for evaluating LLMs on Italian. These datasets are collected from various sources and cover a wide range of tasks.
+## Datasets included in ITA-Bench
+ITA-Bench includes a variety of datasets for evaluating LLMs on Italian. These datasets are collected from various sources and cover a wide range of tasks.
 
 The datasets are divided into two main categories:
 1. **Translations**: These datasets are translations of existing English datasets into Italian. They are used to evaluate the performance of LLMs on tasks that have been previously studied in the English language, allowing for a direct comparison between models trained on different languages.
@@ -13,7 +13,7 @@ The datasets are divided into two main categories:
     - **Pros**: The original datasets are already in Italian, so there is no need for translation that may introduce errors
     - **Cons**: These datasets were not originally designed for evaluating LLMs and the adaptation process may introduce biases or errors
 
-ItaBench currently includes the following datasets:
+ITA-Bench currently includes the following datasets:
 | Dataset | Task | Type | Description |
 |---------|------|------|-------------|
 | ARC-Challenge | QA | Translation | Commonsense and scientific knowledge |
@@ -37,7 +37,7 @@ ItaBench currently includes the following datasets:
 
 
 ## How to use
-To use ItaBench, you can follow these steps:
+To use ITA-Bench, you can follow these steps:
 1. Clone this repository:
 ```bash
 git clone git@github.com:SapienzaNLP/ita-bench.git
@@ -61,13 +61,14 @@ lm_eval \
 This command will evaluate `meta-llama/Meta-Llama-3.1-8B-Instruct` on all the benchmarks in our suite. The results will be saved in the `outputs/` directory.
 
 ## Contributing
-We welcome contributions to ItaBench! 
+We welcome contributions to ITA-Bench! 
 
 
 ## License
 The code in this repository is licensed under the Apache License, Version 2.0. See the `LICENSE` file for more details.
 
-However, the datasets included in ItaBench may have different licenses. Please refer to the original datasets for more information about their licenses.
+However, the datasets included in ITA-Bench may have different licenses. Please refer to the original datasets for more information about their licenses.
+
 
 ## Publication and citation
 > Coming soon: a paper on our benchmark suite is under review. Stay tuned for updates!
