@@ -4,6 +4,9 @@ This is the [Sapienza NLP](https://github.com/sapienzanlp) GitHub repository for
 ## Datasets included in ITA-Bench
 ITA-Bench includes a variety of datasets for evaluating LLMs on Italian. These datasets are collected from various sources and cover a wide range of tasks.
 
+> [!NOTE]
+> All the datasets are available on [🤗 Hugging Face Datasets](https://huggingface.co/collections/sapienzanlp/italian-benchmarks-for-llms-66337ca59e6df7d7d4933896)!
+
 The datasets are divided into two main categories:
 1. 🌐 **Translations**: These datasets are translations of existing English datasets into Italian. They are used to evaluate the performance of LLMs on tasks that have been previously studied in the English language, allowing for a direct comparison between models trained on different languages.
     - **Pros**: Translations allow for a direct comparison between models trained on different languages
