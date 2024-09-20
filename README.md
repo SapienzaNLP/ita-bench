@@ -1,4 +1,4 @@
-# ITA-Bench
+# ITA-Bench 🤖🇮🇹
 This is the [Sapienza NLP](https://github.com/sapienzanlp) GitHub repository for ITA-Bench (Italian Benchmarks), **a benchmark suite for the evaluation of Large Language Models (LLMs) on the Italian language**. ITA-Bench is designed to evaluate the performance of LLMs on a variety of tasks, including question answering, commonsense reasoning, mathematical capabilities, named entity recognition, reading comprehension, and others. 
 
 ## Datasets included in ITA-Bench
