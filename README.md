@@ -55,7 +55,8 @@ lm_eval \
   --num_fewshot 0 \
   --log_samples \
   --output_path outputs/ \
-  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc
+  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc \
+  --include tasks
 ```
 This command will evaluate `meta-llama/Meta-Llama-3.1-8B-Instruct` on all the benchmarks in our suite. The results will be saved in the `outputs/` directory.
 
