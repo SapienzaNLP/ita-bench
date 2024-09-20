@@ -70,7 +70,7 @@ The code in this repository is licensed under the Apache License, Version 2.0. S
 However, the datasets included in ItaBench may have different licenses. Please refer to the original datasets for more information about their licenses.
 
 ## Publication and citation
-> [!NOTE] Coming soon: a paper on our benchmark suite is under review. Stay tuned for updates!
+> Coming soon: a paper on our benchmark suite is under review. Stay tuned for updates!
 
 ## Acknowledgements
 * [Future AI Research](https://future-ai-research.it/) for supporting this work.
