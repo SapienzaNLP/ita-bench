@@ -81,3 +81,4 @@ However, the datasets included in ITA-Bench may have different licenses. Please 
 * [CINECA](https://www.cineca.it/) for providing computational resources.
 * [Unbabel](https://unbabel.com/) for building Tower-LLM.
 * Thanks to the authors of the original datasets for making them available.
+* Thanks to the "Multilingual Natural Language Processing" students of the Master's of Engineering in Computer Science (Dipartimento di Ingegneria Informatica, Automatica e Gestionale, DIAG) of Sapienza University of Rome for their help in adapting some datasets.
