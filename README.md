@@ -23,24 +23,24 @@ The datasets are divided into two main categories:
 ITA-Bench currently includes the following datasets:
 | Dataset | Task | Type | Description |
 |---------|------|------|-------------|
-| ARC-Challenge | QA | 🌐 Translation | Commonsense and scientific knowledge |
-| ARC-Easy | QA | 🌐 Translation | Commonsense and scientific knowledge |
-| BoolQ | QA + passage | 🌐 Translation | Boolean questions |
-| GSM8K | QA | 🌐 Translation | Simple math word problems |
-| Hellaswag | Completion | 🌐 Translation | Commonsense reasoning |
-| MMLU | QA | 🌐 Translation | Advanced questions on 57 subjects |
-| PIQA | QA | 🌐 Translation | Physical interactions reasoning |
-| SciQ | QA + passage | 🌐 Translation | Scientific reading comprehension |
-| TruthfulQA | QA | 🌐 Translation | Questions on Web misconceptions |
-| WinoGrande | Completion | 🌐 Translation | Commonsense reasoning |
-| AMI | QA | 🔨 Adaptation | Misoginy detection |
-| Discotex | Completion | 🔨 Adaptation | Commonsense and world knowledge |
-| Ghigliottinai | QA | 🔨 Adaptation | Guess the missing concept |
-| NERMUD | NER | 🔨 Adaptation | Named entity recognition |
-| PreLearn | QA | 🔨 Adaptation | Reasoning about concept relationships |
-| PreTens | QA | 🔨 Adaptation | Reasoning about concept relationships |
-| QuandHO | QA | 🔨 Adaptation | Reading comprehesion |
-| WiC | QA | 🔨 Adaptation | Word sense disambiguation |
+| [ARC-Challenge](https://huggingface.co/datasets/allenai/ai2_arc) | QA | 🌐 Translation | Commonsense and scientific knowledge |
+| [ARC-Easy](https://huggingface.co/datasets/allenai/ai2_arc) | QA | 🌐 Translation | Commonsense and scientific knowledge |
+| [BoolQ](https://huggingface.co/datasets/google/boolq) | QA + passage | 🌐 Translation | Boolean questions |
+| [GSM8K](https://huggingface.co/datasets/openai/gsm8k) | QA | 🌐 Translation | Simple math word problems |
+| [Hellaswag](https://huggingface.co/datasets/Rowan/hellaswag) | Completion | 🌐 Translation | Commonsense reasoning |
+| [MMLU](https://huggingface.co/datasets/cais/mmlu) | QA | 🌐 Translation | Advanced questions on 57 subjects |
+| [PIQA](https://huggingface.co/datasets/ybisk/piqa) | QA | 🌐 Translation | Physical interactions reasoning |
+| [SciQ](https://huggingface.co/datasets/allenai/sciq) | QA + passage | 🌐 Translation | Scientific reading comprehension |
+| [TruthfulQA](https://huggingface.co/datasets/truthfulqa/truthful_qa) | QA | 🌐 Translation | Questions on Web misconceptions |
+| [WinoGrande](https://huggingface.co/datasets/allenai/winogrande) | Completion | 🌐 Translation | Commonsense reasoning |
+| [AMI](https://amievalita2020.github.io/) | QA | 🔨 Adaptation | Misoginy detection |
+| [Discotex](https://sites.google.com/view/discotex/home) | Completion | 🔨 Adaptation | Commonsense and world knowledge |
+| [Ghigliottinai](https://ghigliottin-ai.github.io/) | QA | 🔨 Adaptation | Guess the missing concept |
+| [NERMUD](https://nermud.fbk.eu/) | NER | 🔨 Adaptation | Named entity recognition |
+| [PreLearn](https://sites.google.com/view/prelearn20/home) | QA | 🔨 Adaptation | Reasoning about concept relationships |
+| [PreTens](https://sites.google.com/view/semeval2022-pretens) | QA | 🔨 Adaptation | Reasoning about concept relationships |
+| [QuandHO](https://dh.fbk.eu/2016/03/quandho-question-answering-data-for-italian-history/) | QA | 🔨 Adaptation | Reading comprehesion |
+| [WiC](https://wic-ita.github.io/) | QA | 🔨 Adaptation | Word sense disambiguation |
 
 
 ## How to use
