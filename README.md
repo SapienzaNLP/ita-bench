@@ -3,7 +3,7 @@
 </p>
 
 # ITA-Bench 🤖🇮🇹
-This is the [Sapienza NLP](https://github.com/sapienzanlp) GitHub repository for ITA-Bench (Italian Benchmarks), **a benchmark suite for the evaluation of Large Language Models (LLMs) on the Italian language**. ITA-Bench is designed to evaluate the performance of LLMs on a variety of tasks, including question answering, commonsense reasoning, mathematical capabilities, named entity recognition, reading comprehension, and others. 
+This is the [Sapienza NLP](https://github.com/sapienzanlp) GitHub repository for **ITA-Bench** (Italian Benchmarks), **a benchmark suite for the evaluation of Large Language Models (LLMs) on the Italian language**. ITA-Bench is designed to evaluate the performance of LLMs on a variety of tasks, including question answering, commonsense reasoning, mathematical capabilities, named entity recognition, reading comprehension, and others. 
 
 ## Datasets included in ITA-Bench
 ITA-Bench includes a variety of datasets for evaluating LLMs on Italian. These datasets are collected from various sources and cover a wide range of tasks.
@@ -85,4 +85,4 @@ However, the datasets included in ITA-Bench may have different licenses. Please 
 * [CINECA](https://www.cineca.it/) for providing computational resources.
 * [Unbabel](https://unbabel.com/) for building Tower-LLM.
 * Thanks to the authors of the original datasets for making them available.
-* Thanks to the "Multilingual Natural Language Processing" students of the Master's of Engineering in Computer Science (Dipartimento di Ingegneria Informatica, Automatica e Gestionale, DIAG) of Sapienza University of Rome for their help in adapting some datasets.
+* Thanks to all the [Multilingual Natural Language Processing](http://naviglinlp.blogspot.com/) course students of the Master's of Engineering in Computer Science (Dipartimento di Ingegneria Informatica, Automatica e Gestionale, DIAG) of Sapienza University of Rome for their help in adapting some datasets.
