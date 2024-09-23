@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="ita-bench-figures.001.png" />
+  <img src="ITA-bench.jpg" />
 </p>
 
 # ITA-Bench 🤖🇮🇹
