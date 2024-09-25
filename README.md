@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="ITA-bench.jpg" />
+  <img src="assets/images/ITA-bench.jpg" />
 </p>
 
 # ITA-Bench 🤖🇮🇹
@@ -43,7 +43,22 @@ ITA-Bench currently includes the following datasets:
 | [WiC](https://wic-ita.github.io/) | QA | 🔨 Adaptation | Word sense disambiguation |
 
 
-## How to use
+## How to use ITA-Bench
+ITA-Bench is designed to be easy to use and flexible. You can evaluate any LLM on the included datasets using the `lm_eval` command-line tool. The tool supports a variety of options to customize the evaluation process, including the ability to specify the LLM model, the number of few-shot examples, and the tasks to evaluate.
+
+### Before you start
+We always recommend using a virtual environment to manage your dependencies, e.g., using `venv` or `conda`. To create a new environment with `conda`, you can run:
+```bash
+# Create a new environment with Conda
+conda create -n ita-bench python=3.10
+
+# Always remember to activate the environment before running any command!
+conda activate ita-bench
+```
+> [!NOTE]
+> You can read more about managing environments with Conda in the [official documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+
+### Evaluating an LLM on ITA-Bench
 To use ITA-Bench, you can follow these steps:
 1. Clone this repository:
 ```bash
@@ -66,6 +81,22 @@ lm_eval \
   --include tasks
 ```
 This command will evaluate `meta-llama/Meta-Llama-3.1-8B-Instruct` on all the benchmarks in our suite. The results will be saved in the `outputs/` directory.
+
+#### Running the evaluation on multiple GPUs
+If you have multiple GPUs available, you can use the `accelerate` command to run the evaluation on multiple GPUs:
+```bash
+accelerate launch -m lm_eval \
+  --model hf \
+  --model_args pretrained=meta-llama/Meta-Llama-3.1-8B-Instruct,dtype=bfloat16 \
+  --num_fewshot 0 \
+  --log_samples \
+  --output_path outputs/ \
+  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc
+```
+
+> [!NOTE]
+> You can read more about `accelerate` in the [official documentation]([https://](https://huggingface.co/docs/accelerate/index)
+
 
 ## Contributing
 We welcome contributions to ITA-Bench! 
