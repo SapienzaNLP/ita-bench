@@ -95,7 +95,7 @@ accelerate launch -m lm_eval \
 ```
 
 > [!NOTE]
-> You can read more about `accelerate` in the [official documentation]([https://](https://huggingface.co/docs/accelerate/index)
+> You can read more about `accelerate` in the [official documentation](https://huggingface.co/docs/accelerate/index).
 
 
 ## Contributing
