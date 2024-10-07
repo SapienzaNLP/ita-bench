@@ -131,8 +131,8 @@ SUBJECTS_TRANSLATION = {
 }
 
 DESCRIPTIONS = {
-    "en": "The following are multiple choice questions (with answers) about {subject}.\n\n",
-    "it": "Le seguenti sono domande a scelta multipla (con risposte) su {subject}.\n\n",
+    "en": 'The following are multiple choice questions (with answers) about "{subject}".\n\n',
+    "it": 'Le seguenti sono domande a scelta multipla (con risposte) su "{subject}".\n\n',
 }
 
 METHOD_TEMPLATE = """# {subject}
@@ -162,11 +162,16 @@ yaml.add_representer(FunctionCall, function_representer)
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input_yaml", type=str, required=True)
+    parser.add_argument("--base_utils", type=str, required=True)
     parser.add_argument("--output_dir", type=str, required=True)
     parser.add_argument("--source_language", type=str, required=True)
     parser.add_argument("--target_language", type=str, required=True)
-    parser.add_argument("--base_utils", type=str, required=True)
-    parser.add_argument("--task_type", type=str, required=True)
+    parser.add_argument(
+        "--task_type",
+        type=str,
+        required=True,
+        choices=["cloze", "multichoice"],
+    )
     args = parser.parse_args()
 
     source_language = args.source_language
@@ -174,13 +179,15 @@ def main():
     task_type = args.task_type
 
     for subject, split in SUBJECTS.items():
-        task_name = f"itabench_mmlu_{subject}_{source_language}-{target_language}"
-        split_name = f"itabench_mmlu_{split}_{source_language}-{target_language}_tasks"
+        task_name = (
+            f"itabench_mmlu_{task_type}_{subject}_{source_language}-{target_language}"
+        )
+        split_name = f"itabench_mmlu_{task_type}_{split}_{source_language}-{target_language}_tasks"
 
         if source_language == "en":
-            subject_name = subject.replace("_", " ").title()
+            subject_name = subject.replace("_", " ")
         else:
-            subject_name = SUBJECTS_TRANSLATION[source_language][subject].title()
+            subject_name = SUBJECTS_TRANSLATION[source_language][subject]
         description = DESCRIPTIONS[source_language].format(subject=subject_name)
 
         task_yaml = {
@@ -188,23 +195,19 @@ def main():
             "task": task_name,
             "tag": [split_name],
             "description": description,
-            "process_docs": FunctionCall(f"utils.process_docs_{task_type}_{subject}"),
+            "process_docs": FunctionCall(
+                f"{task_type}_utils.process_docs_{task_type}_{subject}"
+            ),
         }
 
         output_path = os.path.join(args.output_dir, f"{task_name}.yaml")
         with open(output_path, "w") as f:
-            yaml.dump(
-                task_yaml,
-                f,
-                indent=2,
-                default_style='"',
-                default_flow_style=False,
-            )
+            yaml.dump(task_yaml, f, indent=2)
 
     with open(args.base_utils, "r") as f:
         base_utils = f.read()
 
-    utils_path = os.path.join(args.output_dir, "utils.py")
+    utils_path = os.path.join(args.output_dir, f"{task_type}_utils.py")
 
     with open(utils_path, "w") as f:
         f.write(base_utils)
@@ -219,11 +222,11 @@ def main():
                 )
             )
 
-    mmlu_name = f"itabench_mmlu_{source_language}-{target_language}"
+    mmlu_name = f"itabench_mmlu_{task_type}_{source_language}-{target_language}"
     mmlu_yaml = {
         "group": mmlu_name,
         "task": [
-            f"itabench_mmlu_{subject}_{source_language}-{target_language}"
+            f"itabench_mmlu_{task_type}_{subject}_{source_language}-{target_language}"
             for subject in SUBJECTS
         ],
         "aggregate_metric_list": [

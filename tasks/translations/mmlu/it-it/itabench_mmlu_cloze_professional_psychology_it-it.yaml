@@ -1,0 +1,10 @@
+description: 'Le seguenti sono domande a scelta multipla (con risposte) su "psicologia
+  professionale".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'cloze_utils.process_docs_cloze_professional_psychology'
+tag:
+- itabench_mmlu_cloze_social_sciences_it-it_tasks
+task: itabench_mmlu_cloze_professional_psychology_it-it

@@ -26,17 +26,18 @@ def process_docs(
     def _process_doc(doc):
         if source_language == "en":
             query = doc["input"]
-            activity_label = doc["metadata"]["activity_label"]
+            # activity_label = doc["metadata"]["activity_label"]
         else:
             query = doc["input_translation"]
-            activity_label = doc["metadata"]["activity_label_translation"]
+            # activity_label = doc["metadata"]["activity_label_translation"]
 
         if target_language == "en":
             choices = doc["choices"]
         else:
             choices = doc["choices_translation"]
 
-        query = activity_label + ": " + preprocess(query)
+        # query = activity_label + ": " + preprocess(query)
+        query = preprocess(query)
         choices = [preprocess(choice) for choice in choices]
 
         return {

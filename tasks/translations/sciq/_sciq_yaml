@@ -1,9 +1,9 @@
-dataset_path: s-conia/sciq_italian
+dataset_path: sapienzanlp/sciq_italian
 output_type: multiple_choice
 
 validation_split: validation
 test_split: test
-fewshot_split: train
+fewshot_split: validation
 target_delimiter: ""
 
 doc_to_text: "query"

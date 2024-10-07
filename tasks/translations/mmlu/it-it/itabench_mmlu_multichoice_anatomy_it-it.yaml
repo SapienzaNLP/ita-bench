@@ -1,0 +1,9 @@
+description: 'Le seguenti sono domande a scelta multipla (con risposte) su "anatomia".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'multichoice_utils.process_docs_multichoice_anatomy'
+tag:
+- itabench_mmlu_multichoice_stem_it-it_tasks
+task: itabench_mmlu_multichoice_anatomy_it-it

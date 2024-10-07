@@ -1,5 +1,4 @@
-dataset_path: s-conia/truthfulqa_italian
-dataset_name: mc1
+dataset_path: sapienzanlp/truthful_qa_italian
 output_type: multiple_choice
 
 validation_split: validation

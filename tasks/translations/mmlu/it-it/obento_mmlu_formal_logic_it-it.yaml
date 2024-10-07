@@ -1,7 +1,0 @@
-"description": "Le seguenti sono domande a scelta multipla (con risposte) su Logica\
-  \ Formale.\n\n"
-"include": "../_mmlu_yaml"
-"process_docs": !function "utils.process_docs_cloze_formal_logic"
-"tag":
-- "itabench_mmlu_humanities_it-it_tasks"
-"task": "itabench_mmlu_formal_logic_it-it"

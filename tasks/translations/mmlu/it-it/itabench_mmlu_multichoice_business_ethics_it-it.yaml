@@ -1,0 +1,10 @@
+description: 'Le seguenti sono domande a scelta multipla (con risposte) su "etica
+  aziendale".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'multichoice_utils.process_docs_multichoice_business_ethics'
+tag:
+- itabench_mmlu_multichoice_other_it-it_tasks
+task: itabench_mmlu_multichoice_business_ethics_it-it

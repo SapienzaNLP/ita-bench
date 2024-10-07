@@ -51,7 +51,7 @@ def process_docs(
             "gold": int(doc["label"]),
         }
 
-    return dataset.map(_process_doc)
+    return dataset.map(_process_doc).filter(lambda x: x["query"].strip() != "")
 
 
 def process_docs_it_it(dataset: datasets.Dataset) -> datasets.Dataset:

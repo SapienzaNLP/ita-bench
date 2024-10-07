@@ -1,7 +1,0 @@
-"description": "Le seguenti sono domande a scelta multipla (con risposte) su Politica\
-  \ Estera Degli Stati Uniti.\n\n"
-"include": "../_mmlu_yaml"
-"process_docs": !function "utils.process_docs_cloze_us_foreign_policy"
-"tag":
-- "itabench_mmlu_social_sciences_it-it_tasks"
-"task": "itabench_mmlu_us_foreign_policy_it-it"

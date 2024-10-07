@@ -1,0 +1,68 @@
+aggregate_metric_list:
+- aggregation: mean
+  metric: acc
+  weight_by_size: false
+- aggregation: mean
+  metric: acc_norm
+  weight_by_size: false
+group: itabench_mmlu_multichoice_it-it
+metadata:
+  version: '1.0'
+task:
+- itabench_mmlu_multichoice_abstract_algebra_it-it
+- itabench_mmlu_multichoice_anatomy_it-it
+- itabench_mmlu_multichoice_astronomy_it-it
+- itabench_mmlu_multichoice_business_ethics_it-it
+- itabench_mmlu_multichoice_clinical_knowledge_it-it
+- itabench_mmlu_multichoice_college_biology_it-it
+- itabench_mmlu_multichoice_college_chemistry_it-it
+- itabench_mmlu_multichoice_college_computer_science_it-it
+- itabench_mmlu_multichoice_college_mathematics_it-it
+- itabench_mmlu_multichoice_college_medicine_it-it
+- itabench_mmlu_multichoice_college_physics_it-it
+- itabench_mmlu_multichoice_computer_security_it-it
+- itabench_mmlu_multichoice_conceptual_physics_it-it
+- itabench_mmlu_multichoice_econometrics_it-it
+- itabench_mmlu_multichoice_electrical_engineering_it-it
+- itabench_mmlu_multichoice_elementary_mathematics_it-it
+- itabench_mmlu_multichoice_formal_logic_it-it
+- itabench_mmlu_multichoice_global_facts_it-it
+- itabench_mmlu_multichoice_high_school_biology_it-it
+- itabench_mmlu_multichoice_high_school_chemistry_it-it
+- itabench_mmlu_multichoice_high_school_computer_science_it-it
+- itabench_mmlu_multichoice_high_school_european_history_it-it
+- itabench_mmlu_multichoice_high_school_geography_it-it
+- itabench_mmlu_multichoice_high_school_government_and_politics_it-it
+- itabench_mmlu_multichoice_high_school_macroeconomics_it-it
+- itabench_mmlu_multichoice_high_school_mathematics_it-it
+- itabench_mmlu_multichoice_high_school_microeconomics_it-it
+- itabench_mmlu_multichoice_high_school_physics_it-it
+- itabench_mmlu_multichoice_high_school_psychology_it-it
+- itabench_mmlu_multichoice_high_school_statistics_it-it
+- itabench_mmlu_multichoice_high_school_us_history_it-it
+- itabench_mmlu_multichoice_high_school_world_history_it-it
+- itabench_mmlu_multichoice_human_aging_it-it
+- itabench_mmlu_multichoice_human_sexuality_it-it
+- itabench_mmlu_multichoice_international_law_it-it
+- itabench_mmlu_multichoice_jurisprudence_it-it
+- itabench_mmlu_multichoice_logical_fallacies_it-it
+- itabench_mmlu_multichoice_machine_learning_it-it
+- itabench_mmlu_multichoice_management_it-it
+- itabench_mmlu_multichoice_marketing_it-it
+- itabench_mmlu_multichoice_medical_genetics_it-it
+- itabench_mmlu_multichoice_miscellaneous_it-it
+- itabench_mmlu_multichoice_moral_disputes_it-it
+- itabench_mmlu_multichoice_moral_scenarios_it-it
+- itabench_mmlu_multichoice_nutrition_it-it
+- itabench_mmlu_multichoice_philosophy_it-it
+- itabench_mmlu_multichoice_prehistory_it-it
+- itabench_mmlu_multichoice_professional_accounting_it-it
+- itabench_mmlu_multichoice_professional_law_it-it
+- itabench_mmlu_multichoice_professional_medicine_it-it
+- itabench_mmlu_multichoice_professional_psychology_it-it
+- itabench_mmlu_multichoice_public_relations_it-it
+- itabench_mmlu_multichoice_security_studies_it-it
+- itabench_mmlu_multichoice_sociology_it-it
+- itabench_mmlu_multichoice_us_foreign_policy_it-it
+- itabench_mmlu_multichoice_virology_it-it
+- itabench_mmlu_multichoice_world_religions_it-it

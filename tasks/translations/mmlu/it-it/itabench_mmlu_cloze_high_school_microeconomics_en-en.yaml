@@ -1,0 +1,10 @@
+description: 'The following are multiple choice questions (with answers) about "high
+  school microeconomics".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'utils.process_docs_cloze_high_school_microeconomics'
+tag:
+- itabench_mmlu_cloze_social_sciences_en-en_tasks
+task: itabench_mmlu_cloze_high_school_microeconomics_en-en

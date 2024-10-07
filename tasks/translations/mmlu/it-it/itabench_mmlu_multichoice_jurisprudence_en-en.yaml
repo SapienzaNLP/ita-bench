@@ -1,0 +1,9 @@
+description: 'The following are multiple choice questions (with answers) about "jurisprudence".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'utils.process_docs_multichoice_jurisprudence'
+tag:
+- itabench_mmlu_multichoice_humanities_en-en_tasks
+task: itabench_mmlu_multichoice_jurisprudence_en-en

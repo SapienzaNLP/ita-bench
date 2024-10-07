@@ -1,0 +1,10 @@
+description: 'The following are multiple choice questions (with answers) about "professional
+  accounting".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'multichoice_utils.process_docs_multichoice_professional_accounting'
+tag:
+- itabench_mmlu_multichoice_other_en-en_tasks
+task: itabench_mmlu_multichoice_professional_accounting_en-en

@@ -1,0 +1,9 @@
+description: 'The following are multiple choice questions (with answers) about "philosophy".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'utils.process_docs_multichoice_philosophy'
+tag:
+- itabench_mmlu_multichoice_humanities_en-en_tasks
+task: itabench_mmlu_multichoice_philosophy_en-en

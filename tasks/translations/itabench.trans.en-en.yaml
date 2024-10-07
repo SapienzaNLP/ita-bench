@@ -7,7 +7,8 @@ task:
   - itabench_boolq_with_passages_en-en
   - itabench_gsm8k_multichoice_en-en
   - itabench_hellaswag_en-en
-  - itabench_mmlu_en-en
+  - itabench_mmlu_multichoice_en-en
+  - itabench_mmlu_cloze_en-en
   - itabench_piqa_en-en
   - itabench_sciq_en-en
   - itabench_sciq_with_passages_en-en

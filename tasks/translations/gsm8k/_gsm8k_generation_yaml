@@ -1,4 +1,4 @@
-dataset_path: s-conia/gsm8k_italian
+dataset_path: sapienzanlp/gsm8k_italian
 output_type: generate_until
 
 training_split: train
@@ -26,7 +26,7 @@ generation_kwargs:
     - "<|im_end|>"
   do_sample: false
   temperature: 0.0
-  max_new_tokens: 256
+  max_new_tokens: 512
 repeats: 1
 
 filter_list:

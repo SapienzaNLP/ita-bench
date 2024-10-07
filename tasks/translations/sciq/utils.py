@@ -8,8 +8,8 @@ QUERY_PREFIX = {
 }
 
 PASSAGE_PREFIX = {
-    "en": "Passage: {passage}\n",
-    "it": "Testo: {passage}\n",
+    "en": "Context: {passage}\n",
+    "it": "Contesto: {passage}\n",
 }
 
 ANSWER_PREFIX = {

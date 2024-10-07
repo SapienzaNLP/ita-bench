@@ -1,4 +1,4 @@
-dataset_path: s-conia/piqa_italian
+dataset_path: sapienzanlp/piqa_italian
 output_type: multiple_choice
 
 training_split: train

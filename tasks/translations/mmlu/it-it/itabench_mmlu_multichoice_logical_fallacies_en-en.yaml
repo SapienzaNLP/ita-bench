@@ -1,0 +1,10 @@
+description: 'The following are multiple choice questions (with answers) about "logical
+  fallacies".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'utils.process_docs_multichoice_logical_fallacies'
+tag:
+- itabench_mmlu_multichoice_humanities_en-en_tasks
+task: itabench_mmlu_multichoice_logical_fallacies_en-en

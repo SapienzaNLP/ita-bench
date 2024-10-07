@@ -1,0 +1,10 @@
+description: 'The following are multiple choice questions (with answers) about "college
+  physics".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'cloze_utils.process_docs_cloze_college_physics'
+tag:
+- itabench_mmlu_cloze_stem_en-en_tasks
+task: itabench_mmlu_cloze_college_physics_en-en

@@ -24,14 +24,15 @@ def process_docs(
     def _process_doc(doc):
         if source_language == "en":
             query = QUERY_PREFIX[source_language] + doc["input"]
+            choices = doc["choices"]
         else:
             query = QUERY_PREFIX[source_language] + doc["input_translation"]
+            choices = doc["choices_translation"]
 
         query += "\n" + ANSWER_PREFIX[target_language]
         result = doc["label"]
 
         if output_type == "multiple_choice":
-            choices = [result] + doc["metadata"]["distractors"]
 
             return {
                 "id": doc["id"],

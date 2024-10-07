@@ -1,4 +1,5 @@
-dataset_path: s-conia/hellaswag_italian
+dataset_path: sapienzanlp/hellaswag_italian
+dataset_name: all
 output_type: multiple_choice
 
 training_split: train

@@ -1,4 +1,4 @@
-dataset_path: s-conia/arc_italian
+dataset_path: sapienzanlp/arc_italian
 dataset_name: arc_easy
 output_type: multiple_choice
 

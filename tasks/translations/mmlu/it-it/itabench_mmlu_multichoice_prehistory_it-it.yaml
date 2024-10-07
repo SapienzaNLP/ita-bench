@@ -1,0 +1,9 @@
+description: 'Le seguenti sono domande a scelta multipla (con risposte) su "preistoria".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'multichoice_utils.process_docs_multichoice_prehistory'
+tag:
+- itabench_mmlu_multichoice_humanities_it-it_tasks
+task: itabench_mmlu_multichoice_prehistory_it-it

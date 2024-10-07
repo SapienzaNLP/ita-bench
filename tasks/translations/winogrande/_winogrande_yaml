@@ -1,4 +1,4 @@
-dataset_path: s-conia/winogrande_italian
+dataset_path: sapienzanlp/winogrande_italian
 output_type: multiple_choice
 
 training_split: train

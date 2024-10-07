@@ -1,7 +1,0 @@
-"description": "The following are multiple choice questions (with answers) about Formal\
-  \ Logic.\n\n"
-"include": "../_mmlu_yaml"
-"process_docs": !function "utils.process_docs_multichoice_formal_logic"
-"tag":
-- "itabench_mmlu_humanities_en-en_tasks"
-"task": "itabench_mmlu_formal_logic_en-en"

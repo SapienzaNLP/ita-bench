@@ -1,4 +1,4 @@
-dataset_path: s-conia/gsm8k_italian
+dataset_path: sapienzanlp/gsm8k_italian
 output_type: multiple_choice
 
 training_split: train

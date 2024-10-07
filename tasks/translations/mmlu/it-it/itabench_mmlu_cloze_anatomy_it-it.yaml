@@ -1,0 +1,9 @@
+description: 'Le seguenti sono domande a scelta multipla (con risposte) su "anatomia".
+
+
+  '
+include: ../_mmlu_yaml
+process_docs: !function 'cloze_utils.process_docs_cloze_anatomy'
+tag:
+- itabench_mmlu_cloze_stem_it-it_tasks
+task: itabench_mmlu_cloze_anatomy_it-it

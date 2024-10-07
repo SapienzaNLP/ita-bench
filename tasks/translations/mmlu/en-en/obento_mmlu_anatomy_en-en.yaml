@@ -1,7 +1,0 @@
-"description": "The following are multiple choice questions (with answers) about Anatomy.\n\
-  \n"
-"include": "../_mmlu_yaml"
-"process_docs": !function "utils.process_docs_multichoice_anatomy"
-"tag":
-- "itabench_mmlu_stem_en-en_tasks"
-"task": "itabench_mmlu_anatomy_en-en"

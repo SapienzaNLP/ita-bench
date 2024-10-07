@@ -12,8 +12,8 @@ QUERY_PREFIX = {
 }
 
 ANSWER_PREFIX = {
-    "en": "Answer: ",
-    "it": "Risposta: ",
+    "en": "Answer:",
+    "it": "Risposta:",
 }
 
 
@@ -77,9 +77,7 @@ def process_docs(
         }
 
     if subject is not None:
-        dataset = dataset.filter(
-            lambda x: x["metadata"]["subject"] == subject.replace("_", " ")
-        )
+        dataset = dataset.filter(lambda x: x["metadata"]["subject"] == subject)
 
     if template == "cloze":
         return dataset.map(_process_doc_cloze)

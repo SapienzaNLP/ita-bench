@@ -1,7 +1,0 @@
-"description": "The following are multiple choice questions (with answers) about Abstract\
-  \ Algebra.\n\n"
-"include": "../_mmlu_yaml"
-"process_docs": !function "utils.process_docs_multichoice_abstract_algebra"
-"tag":
-- "itabench_mmlu_stem_en-en_tasks"
-"task": "itabench_mmlu_abstract_algebra_en-en"

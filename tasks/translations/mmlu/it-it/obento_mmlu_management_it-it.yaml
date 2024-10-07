@@ -1,7 +1,0 @@
-"description": "Le seguenti sono domande a scelta multipla (con risposte) su Management.\n\
-  \n"
-"include": "../_mmlu_yaml"
-"process_docs": !function "utils.process_docs_cloze_management"
-"tag":
-- "itabench_mmlu_other_it-it_tasks"
-"task": "itabench_mmlu_management_it-it"

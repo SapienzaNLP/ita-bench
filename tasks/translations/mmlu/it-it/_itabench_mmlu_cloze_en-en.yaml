@@ -1,0 +1,68 @@
+aggregate_metric_list:
+- aggregation: mean
+  metric: acc
+  weight_by_size: false
+- aggregation: mean
+  metric: acc_norm
+  weight_by_size: false
+group: itabench_mmlu_cloze_en-en
+metadata:
+  version: '1.0'
+task:
+- itabench_mmlu_cloze_abstract_algebra_en-en
+- itabench_mmlu_cloze_anatomy_en-en
+- itabench_mmlu_cloze_astronomy_en-en
+- itabench_mmlu_cloze_business_ethics_en-en
+- itabench_mmlu_cloze_clinical_knowledge_en-en
+- itabench_mmlu_cloze_college_biology_en-en
+- itabench_mmlu_cloze_college_chemistry_en-en
+- itabench_mmlu_cloze_college_computer_science_en-en
+- itabench_mmlu_cloze_college_mathematics_en-en
+- itabench_mmlu_cloze_college_medicine_en-en
+- itabench_mmlu_cloze_college_physics_en-en
+- itabench_mmlu_cloze_computer_security_en-en
+- itabench_mmlu_cloze_conceptual_physics_en-en
+- itabench_mmlu_cloze_econometrics_en-en
+- itabench_mmlu_cloze_electrical_engineering_en-en
+- itabench_mmlu_cloze_elementary_mathematics_en-en
+- itabench_mmlu_cloze_formal_logic_en-en
+- itabench_mmlu_cloze_global_facts_en-en
+- itabench_mmlu_cloze_high_school_biology_en-en
+- itabench_mmlu_cloze_high_school_chemistry_en-en
+- itabench_mmlu_cloze_high_school_computer_science_en-en
+- itabench_mmlu_cloze_high_school_european_history_en-en
+- itabench_mmlu_cloze_high_school_geography_en-en
+- itabench_mmlu_cloze_high_school_government_and_politics_en-en
+- itabench_mmlu_cloze_high_school_macroeconomics_en-en
+- itabench_mmlu_cloze_high_school_mathematics_en-en
+- itabench_mmlu_cloze_high_school_microeconomics_en-en
+- itabench_mmlu_cloze_high_school_physics_en-en
+- itabench_mmlu_cloze_high_school_psychology_en-en
+- itabench_mmlu_cloze_high_school_statistics_en-en
+- itabench_mmlu_cloze_high_school_us_history_en-en
+- itabench_mmlu_cloze_high_school_world_history_en-en
+- itabench_mmlu_cloze_human_aging_en-en
+- itabench_mmlu_cloze_human_sexuality_en-en
+- itabench_mmlu_cloze_international_law_en-en
+- itabench_mmlu_cloze_jurisprudence_en-en
+- itabench_mmlu_cloze_logical_fallacies_en-en
+- itabench_mmlu_cloze_machine_learning_en-en
+- itabench_mmlu_cloze_management_en-en
+- itabench_mmlu_cloze_marketing_en-en
+- itabench_mmlu_cloze_medical_genetics_en-en
+- itabench_mmlu_cloze_miscellaneous_en-en
+- itabench_mmlu_cloze_moral_disputes_en-en
+- itabench_mmlu_cloze_moral_scenarios_en-en
+- itabench_mmlu_cloze_nutrition_en-en
+- itabench_mmlu_cloze_philosophy_en-en
+- itabench_mmlu_cloze_prehistory_en-en
+- itabench_mmlu_cloze_professional_accounting_en-en
+- itabench_mmlu_cloze_professional_law_en-en
+- itabench_mmlu_cloze_professional_medicine_en-en
+- itabench_mmlu_cloze_professional_psychology_en-en
+- itabench_mmlu_cloze_public_relations_en-en
+- itabench_mmlu_cloze_security_studies_en-en
+- itabench_mmlu_cloze_sociology_en-en
+- itabench_mmlu_cloze_us_foreign_policy_en-en
+- itabench_mmlu_cloze_virology_en-en
+- itabench_mmlu_cloze_world_religions_en-en

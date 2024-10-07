@@ -1,4 +1,4 @@
-dataset_path: s-conia/boolq_italian
+dataset_path: sapienzanlp/boolq_italian
 output_type: multiple_choice
 
 training_split: train

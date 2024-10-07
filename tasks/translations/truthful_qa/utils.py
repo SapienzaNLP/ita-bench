@@ -16,6 +16,7 @@ def process_docs(
     dataset: datasets.Dataset,
     source_language: str,
     target_language: str,
+    mc_type: str = "mc1",
 ) -> datasets.Dataset:
     """
     Prepare the dataset and builds the prompt using the source and target languages.
@@ -28,9 +29,9 @@ def process_docs(
             input = doc["input_translation"]
 
         if target_language == "en":
-            choices = doc["choices"]
+            choices = doc["choices"][mc_type]
         else:
-            choices = doc["choices_translation"]
+            choices = doc["choices_translation"][mc_type]
 
         query = QUERY_PREFIX[source_language].format(input=input)
         query += ANSWER_PREFIX[target_language]
@@ -39,7 +40,7 @@ def process_docs(
             "id": doc["id"],
             "query": query,
             "choices": choices,
-            "gold": doc["label"],
+            "gold": doc["label"][mc_type],
         }
 
     return dataset.map(_process_doc)
@@ -49,7 +50,7 @@ def process_results_mc2(doc, results):
     lls, is_greedy = zip(*results)
 
     # Split on the first `0` as everything before it is true (`1`).
-    split_idx = list(doc["label"]).index(0)
+    split_idx = list(doc["label"]["mc2"]).index(0)
     # Compute the normalized probability mass for the correct answer.
     ll_true, ll_false = lls[:split_idx], lls[split_idx:]
     p_true, p_false = np.exp(np.array(ll_true)), np.exp(np.array(ll_false))
@@ -62,13 +63,29 @@ def process_docs_it_it(dataset: datasets.Dataset) -> datasets.Dataset:
     return process_docs(dataset, "it", "it")
 
 
+def process_docs_it_it_mc2(dataset: datasets.Dataset) -> datasets.Dataset:
+    return process_docs(dataset, "it", "it", "mc2")
+
+
 def process_docs_it_en(dataset: datasets.Dataset) -> datasets.Dataset:
     return process_docs(dataset, "it", "en")
+
+
+def process_docs_it_en_mc2(dataset: datasets.Dataset) -> datasets.Dataset:
+    return process_docs(dataset, "it", "en", "mc2")
 
 
 def process_docs_en_en(dataset: datasets.Dataset) -> datasets.Dataset:
     return process_docs(dataset, "en", "en")
 
 
+def process_docs_en_en_mc2(dataset: datasets.Dataset) -> datasets.Dataset:
+    return process_docs(dataset, "en", "en", "mc2")
+
+
 def process_docs_en_it(dataset: datasets.Dataset) -> datasets.Dataset:
     return process_docs(dataset, "en", "it")
+
+
+def process_docs_en_it_mc2(dataset: datasets.Dataset) -> datasets.Dataset:
+    return process_docs(dataset, "en", "it", "mc2")

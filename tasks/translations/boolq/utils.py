@@ -1,8 +1,8 @@
 import datasets
 
 PASSAGE_PREFIX = {
-    "en": "{passage}",
-    "it": "{passage}",
+    "en": "Context: {passage}",
+    "it": "Contesto: {passage}",
 }
 
 QUERY_PREFIX = {
@@ -13,13 +13,13 @@ QUERY_PREFIX = {
 }
 
 ANSWER_PREFIX = {
-    "en": "Answer (yes or no): ",
-    "it": "Risposta (sì o no): ",
+    "en": "Answer (Yes or No): ",
+    "it": "Risposta (Sì o No): ",
 }
 
 CHOICES = {
-    "en": ["yes", "no"],
-    "it": ["sì", "no"],
+    "en": ["Yes", "No"],
+    "it": ["Sì", "No"],
 }
 
 
@@ -38,6 +38,11 @@ def process_docs(
 
         query = QUERY_PREFIX[category][source_language]
 
+        if source_language == "en":
+            query = query.format(input=doc["input"])
+        else:
+            query = query.format(input=doc["input_translation"])
+
         if add_passage:
             passage_prefix = PASSAGE_PREFIX[source_language]
             if source_language == "en":
@@ -45,13 +50,9 @@ def process_docs(
             else:
                 passage = doc["metadata"]["passage_translation"]
 
-            passage = passage_prefix.format(passage=passage)
-            query = passage + "\n" + query
-
-        if source_language == "en":
-            query = query.format(input=doc["input"])
-        else:
-            query = query.format(input=doc["input_translation"])
+            if passage:
+                passage = passage_prefix.format(passage=passage)
+                query = passage + "\n" + query
 
         query += "\n" + ANSWER_PREFIX[target_language]
 
@@ -61,7 +62,7 @@ def process_docs(
             "id": doc["id"],
             "query": query,
             "choices": choices,
-            "gold": 0 if doc["label"] == "True" else 1,
+            "gold": 0 if doc["label"] else 1,
         }
 
     return dataset.map(_process_doc)
