@@ -1,37 +1,11 @@
 group: itabench_adapt_mc
 
 task:
-  - group: itabench_ami_mc
-    task:
-    - itabench_ami_behaviour_mc
-    - itabench_ami_synth_mc
-    aggregate_metric_list:
-      - metric: acc
-        aggregation: mean
-      - metric: acc_norm
-        aggregation: mean
+  - task: itabench_ami_mc
   - task: itabench_discotex_mc
   - task: itabench_ghigliottinai_mc
-  - group: itabench_nermud_mc
-    task:
-    - itabench_nermud_adg_mc
-    - itabench_nermud_wn_mc
-    aggregate_metric_list:
-      - metric: acc
-        aggregation: mean
-      - metric: acc_norm
-        aggregation: mean
-  - group: itabench_plearn_mc
-    task:
-    - itabench_prelearn_data_mining_mc
-    - itabench_prelearn_geometry_mc
-    - itabench_prelearn_physics_mc
-    - itabench_prelearn_precalculus_mc
-    aggregate_metric_list:
-      - metric: acc
-        aggregation: mean
-      - metric: acc_norm
-        aggregation: mean
+  - task: itabench_nermud_mc
+  - task: itabench_prelearn_mc
   - task: itabench_pretens_mc
   - task: itabench_quandho_mc
   - task: itabench_wic_mc

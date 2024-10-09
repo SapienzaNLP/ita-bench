@@ -1,0 +1,9 @@
+group: itabench_ami_cloze
+task:
+  - itabench_ami_behaviour_cloze
+  - itabench_ami_synth_cloze
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+  - metric: acc_norm
+    aggregation: mean

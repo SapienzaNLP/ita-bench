@@ -1,0 +1,10 @@
+group: itabench_ami_mc
+
+task:
+  - itabench_ami_behaviour_mc
+  - itabench_ami_synth_mc
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+  - metric: acc_norm
+    aggregation: mean

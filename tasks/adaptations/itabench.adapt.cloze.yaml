@@ -1,35 +1,9 @@
 group: itabench_adapt_cloze
 
 task:
-  - group: itabench_ami_cloze
-    task:
-    - itabench_ami_behaviour_cloze
-    - itabench_ami_synth_cloze
-    aggregate_metric_list:
-      - metric: acc
-        aggregation: mean
-      - metric: acc_norm
-        aggregation: mean
+  - task: itabench_ami_cloze
   - task: itabench_ghigliottinai_cloze
-  - group: itabench_nermud_cloze
-    task:
-    - itabench_nermud_adg_cloze
-    - itabench_nermud_wn_cloze
-    aggregate_metric_list:
-      - metric: acc
-        aggregation: mean
-      - metric: acc_norm
-        aggregation: mean
-  - group: itabench_plearn_cloze
-    task:
-    - itabench_prelearn_data_mining_cloze
-    - itabench_prelearn_geometry_cloze
-    - itabench_prelearn_physics_cloze
-    - itabench_prelearn_precalculus_cloze
-    aggregate_metric_list:
-      - metric: acc
-        aggregation: mean
-      - metric: acc_norm
-        aggregation: mean
+  - task: itabench_nermud_cloze
+  - task: itabench_plearn_cloze
   - task: itabench_pretens_cloze
   - task: itabench_wic_cloze

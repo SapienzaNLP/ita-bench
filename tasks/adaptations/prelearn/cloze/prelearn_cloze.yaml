@@ -1,0 +1,11 @@
+group: itabench_plearn_cloze
+task:
+  - itabench_prelearn_data_mining_cloze
+  - itabench_prelearn_geometry_cloze
+  - itabench_prelearn_physics_cloze
+  - itabench_prelearn_precalculus_cloze
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+  - metric: acc_norm
+    aggregation: mean
