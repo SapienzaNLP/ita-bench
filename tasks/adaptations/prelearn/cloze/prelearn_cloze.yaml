@@ -1,4 +1,4 @@
-group: itabench_plearn_cloze
+group: itabench_prelearn_cloze
 task:
   - itabench_prelearn_data_mining_cloze
   - itabench_prelearn_geometry_cloze
