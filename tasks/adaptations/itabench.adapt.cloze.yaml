@@ -4,6 +4,6 @@ task:
   - task: itabench_ami_cloze
   - task: itabench_ghigliottinai_cloze
   - task: itabench_nermud_cloze
-  - task: itabench_plearn_cloze
+  - task: itabench_prelearn_cloze
   - task: itabench_pretens_cloze
   - task: itabench_wic_cloze
