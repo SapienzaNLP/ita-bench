@@ -33,7 +33,7 @@ ITA-Bench currently includes the following datasets:
 | [SciQ](https://huggingface.co/datasets/allenai/sciq) | QA + passage | 🌐 Translation | Scientific reading comprehension |
 | [TruthfulQA](https://huggingface.co/datasets/truthfulqa/truthful_qa) | QA | 🌐 Translation | Questions on Web misconceptions |
 | [WinoGrande](https://huggingface.co/datasets/allenai/winogrande) | Completion | 🌐 Translation | Commonsense reasoning |
-| [AMI](https://amievalita2020.github.io/) | QA | 🔨 Adaptation | Misoginy detection |
+| [AMI](https://amievalita2020.github.io/) | QA | 🔨 Adaptation | Misogyny detection |
 | [Discotex](https://sites.google.com/view/discotex/home) | Completion | 🔨 Adaptation | Commonsense and world knowledge |
 | [Ghigliottinai](https://ghigliottin-ai.github.io/) | QA | 🔨 Adaptation | Guess the missing concept |
 | [NERMUD](https://nermud.fbk.eu/) | NER | 🔨 Adaptation | Named entity recognition |
