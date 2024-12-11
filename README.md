@@ -39,7 +39,7 @@ ITA-Bench currently includes the following datasets:
 | [NERMUD](https://nermud.fbk.eu/) | NER | 🔨 Adaptation | Named entity recognition |
 | [PreLearn](https://sites.google.com/view/prelearn20/home) | QA | 🔨 Adaptation | Reasoning about concept relationships |
 | [PreTens](https://sites.google.com/view/semeval2022-pretens) | QA | 🔨 Adaptation | Reasoning about concept relationships |
-| [QuandHO](https://dh.fbk.eu/2016/03/quandho-question-answering-data-for-italian-history/) | QA | 🔨 Adaptation | Reading comprehesion |
+| [QuandHO](https://dh.fbk.eu/2016/03/quandho-question-answering-data-for-italian-history/) | QA | 🔨 Adaptation | Reading comprehension |
 | [WiC](https://wic-ita.github.io/) | QA | 🔨 Adaptation | Word sense disambiguation |
 
 
