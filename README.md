@@ -111,12 +111,13 @@ However, the datasets included in ITA-Bench may have different licenses. Please 
 ## Publication and citation
 If you use this benchmark or part of it, consider to cite us:
 
-```
+```bibtex
 @inproceedings{moroni2024ita,
-  title={ITA-Bench: Towards a More Comprehensive Evaluation for Italian LLMs},
-  author={Moroni, Luca and Conia, Simone and Martelli, Federico and Navigli, Roberto and others},
+  title={{ITA-Bench}: Towards a More Comprehensive Evaluation for {I}talian {LLMs}},
+  author={Moroni, Luca and Conia, Simone and Martelli, Federico and Navigli, Roberto},
   booktitle={Proceedings of the Tenth Italian Conference on Computational Linguistics (CLiC-it 2024)},
-  year={2024}
+  year={2024},
+  url={https://clic2024.ilc.cnr.it/wp-content/uploads/2024/12/66_main_long.pdf},
 }
 ```
 
