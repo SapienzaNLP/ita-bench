@@ -111,7 +111,7 @@ However, the datasets included in ITA-Bench may have different licenses. Please 
 ## Publication and citation
 If you use this benchmark or part of it, consider to cite us:
 
-```json
+```
 @inproceedings{moroni2024ita,
   title={ITA-Bench: Towards a More Comprehensive Evaluation for Italian LLMs},
   author={Moroni, Luca and Conia, Simone and Martelli, Federico and Navigli, Roberto and others},
