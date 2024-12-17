@@ -109,7 +109,16 @@ However, the datasets included in ITA-Bench may have different licenses. Please 
 
 
 ## Publication and citation
-> Coming soon: a paper on our benchmark suite is under review. Stay tuned for updates!
+If you use this benchmark or part of it, consider to cite us:
+
+```json
+@inproceedings{moroni2024ita,
+  title={ITA-Bench: Towards a More Comprehensive Evaluation for Italian LLMs},
+  author={Moroni, Luca and Conia, Simone and Martelli, Federico and Navigli, Roberto and others},
+  booktitle={Proceedings of the Tenth Italian Conference on Computational Linguistics (CLiC-it 2024)},
+  year={2024}
+}
+```
 
 ## Acknowledgements
 * [Future AI Research](https://future-ai-research.it/) for supporting this work.
