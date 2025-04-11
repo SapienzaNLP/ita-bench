@@ -1,9 +1,9 @@
 group: itabench_adapt_cloze
 
 task:
-  - task: itabench_ami_cloze
-  - task: itabench_ghigliottinai_cloze
-  - task: itabench_nermud_cloze
-  - task: itabench_prelearn_cloze
-  - task: itabench_pretens_cloze
-  - task: itabench_wic_cloze
+  - itabench_ami_cloze
+  - itabench_ghigliottinai_cloze
+  - itabench_nermud_cloze
+  - itabench_prelearn_cloze
+  - itabench_pretens_cloze
+  - itabench_wic_cloze

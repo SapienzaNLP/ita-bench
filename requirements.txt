@@ -1,1 +1,1 @@
-git+https://github.com/EleutherAI/lm-evaluation-harness.git@v0.4.4#egg=lm-eval
+git+https://github.com/EleutherAI/lm-evaluation-harness.git@v0.4.8#egg=lm-eval

@@ -1,11 +1,11 @@
 group: itabench_adapt_mc
 
 task:
-  - task: itabench_ami_mc
-  - task: itabench_discotex_mc
-  - task: itabench_ghigliottinai_mc
-  - task: itabench_nermud_mc
-  - task: itabench_prelearn_mc
-  - task: itabench_pretens_mc
-  - task: itabench_quandho_mc
-  - task: itabench_wic_mc
+  - itabench_ami_mc
+  - itabench_discotex_mc
+  - itabench_ghigliottinai_mc
+  - itabench_nermud_mc
+  - itabench_prelearn_mc
+  - itabench_pretens_mc
+  - itabench_quandho_mc
+  - itabench_wic_mc
