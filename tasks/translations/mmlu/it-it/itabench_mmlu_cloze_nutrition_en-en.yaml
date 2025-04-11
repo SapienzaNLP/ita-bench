@@ -1,9 +1,0 @@
-description: 'The following are multiple choice questions (with answers) about "nutrition".
-
-
-  '
-include: ../_mmlu_yaml
-process_docs: !function 'utils.process_docs_cloze_nutrition'
-tag:
-- itabench_mmlu_cloze_other_en-en_tasks
-task: itabench_mmlu_cloze_nutrition_en-en
