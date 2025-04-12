@@ -1,7 +1,6 @@
 dataset_path: sapienzanlp/ami
 output_type: multiple_choice
-
-description: "Indica il livello di misoginia presente nei seguenti tweet.\n\n"
+tag: itabench_ami_synth
 
 training_split: train
 validation_split: train

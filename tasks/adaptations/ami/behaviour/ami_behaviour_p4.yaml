@@ -1,0 +1,6 @@
+include: _ami_behaviour_yaml
+task: itabench_ami_behaviour_p4
+dataset_name: Behaviour
+doc_to_text: "Indica il livello di misoginia presente nei seguenti tweet.\n\nQuale è il livello di misoginia presenten nel seguente tweet '{{text}}'?\nA. Nessuno\nB. Misogino\nC. Misogino aggressivo"
+doc_to_target: label
+doc_to_choice: ["A", "B", "C"]

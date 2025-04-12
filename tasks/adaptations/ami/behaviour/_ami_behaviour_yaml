@@ -1,7 +1,6 @@
 dataset_path: sapienzanlp/ami
 output_type: multiple_choice
-
-description: "Indica se i seguenti tweet presentano caratteristiche misogine.\n\n"
+tag: itabench_ami_behaviour
 
 training_split: train
 validation_split: train

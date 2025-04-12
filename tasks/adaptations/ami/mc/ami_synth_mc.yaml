@@ -1,6 +1,0 @@
-include: ../_ami_synth_yaml
-task: itabench_ami_synth_mc
-dataset_name: Synth
-doc_to_text: "Tweet: '{{text}}'\nDomanda: il tweet presenta caratteristiche misogine? Rispondi sì o no:"
-doc_to_target: label
-doc_to_choice: ["no", "sì"]

@@ -1,0 +1,6 @@
+include: _ami_synth_yaml
+task: itabench_ami_synth_p6
+dataset_name: Synth
+doc_to_text: "Devi indicare se un tweet presenta caratteristiche misogine.\n\nIl seguente tweet: '{{text}}'"
+doc_to_target: label
+doc_to_choice: ["non presenta caratteristiche misogine", "presenta caratteristiche misogine"]
