@@ -1,0 +1,7 @@
+include: _nermud_adg_yaml
+
+task: itabench_nermud_adg_p1
+
+doc_to_text: "Data la frase: \"{{text}}\"\nDomanda: A quale tipologia di entità appartiene \"{{target_entity}}\" nella frase precedente?"
+doc_to_target: label
+doc_to_choice: ["Luogo", "Organizzazione", "Persona"]

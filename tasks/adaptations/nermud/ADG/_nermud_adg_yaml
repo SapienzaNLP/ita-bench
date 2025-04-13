@@ -1,7 +1,9 @@
 dataset_path: sapienzanlp/nermud
 output_type: multiple_choice
 
-description: "Data una frase e un'entità, indica se tale entità rappresenta un luogo, un'organizzazione o una persona.\n\n"
+dataset_name: ADG
+
+tag: itabench_nermud_adg_mp
 
 training_split: train
 validation_split: train

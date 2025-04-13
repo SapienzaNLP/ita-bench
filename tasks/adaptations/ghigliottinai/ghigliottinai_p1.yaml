@@ -1,0 +1,7 @@
+include: _ghigliottinai_yaml
+
+task: itabench_ghigliottinai_p1
+
+doc_to_text: "Date le parole: {{w1}}, {{w2}}, {{w3}}, {{w4}}, {{w5}}\nQuale concetto è quello che lega le parole date?"
+doc_to_target: label
+doc_to_choice: choices

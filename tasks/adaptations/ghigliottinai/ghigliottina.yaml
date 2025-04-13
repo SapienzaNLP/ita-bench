@@ -1,6 +1,6 @@
-group: itabench_discotex
+group: itabench_ghigliottina
 task:
-  - itabench_discotex_mp
+  - itabench_ghighliottina_mp
 
 aggregate_metric_list:
   - metric: acc

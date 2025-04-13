@@ -1,0 +1,7 @@
+include: _nermud_wn_yaml
+
+task: itabench_nermud_wn_p2
+
+doc_to_text: "Data una frase e un'entità, indica se tale entità rappresenta un luogo, un'organizzazione o una persona.\nData la frase: \"{{text}}\"\nDomanda: A quale tipologia di entità appartiene \"{{target_entity}}\" nella frase precedente?"
+doc_to_target: label
+doc_to_choice: ["Luogo", "Organizzazione", "Persona"]

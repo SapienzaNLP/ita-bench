@@ -1,8 +1,6 @@
-include: ../_nermud_yaml
+include: _nermud_wn_yaml
 
-task: itabench_nermud_adg_mc
-dataset_path: sapienzanlp/nermud
-dataset_name: ADG
+task: itabench_nermud_wn_p3
 
 doc_to_text: "Data la frase: \"{{text}}\"\nDomanda: A quale tipologia di entità appartiene \"{{target_entity}}\" nella frase precedente?\nA. Luogo\nB. Organizzazione\nC. Persona\nRisposta:"
 doc_to_target: label

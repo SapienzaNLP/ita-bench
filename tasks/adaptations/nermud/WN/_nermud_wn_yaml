@@ -1,6 +1,9 @@
-dataset_path: sapienzanlp/ami
+dataset_path: sapienzanlp/nermud
 output_type: multiple_choice
-tag: itabench_ami_synth_mp
+
+dataset_name: WN
+tag: itabench_nermud_wn_mp
+
 
 training_split: train
 validation_split: train

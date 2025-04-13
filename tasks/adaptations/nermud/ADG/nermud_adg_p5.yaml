@@ -1,8 +1,6 @@
-include: ../_nermud_yaml
+include: _nermud_adg_yaml
 
-task: itabench_nermud_wn_cloze
-dataset_path: sapienzanlp/nermud
-dataset_name: WN
+task: itabench_nermud_adg_p5
 
 doc_to_text: "Data la frase: \"{{text}}\"\nL'entità {{target_entity}} è"
 doc_to_target: label

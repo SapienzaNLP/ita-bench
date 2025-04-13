@@ -1,7 +1,6 @@
 dataset_path: sapienzanlp/ghigliottinai
 output_type: multiple_choice
-
-description: "Ti viene chiesto di risolvere il gioco della ghigliottina.\nIl gioco della ghigliottina consiste nel trovare un concetto che lega cinque parole date. Tale concetto è esprimibile tramite una singola parola.\n\n"
+tag: itabench_ghigliottina_mp
 
 training_split: train
 validation_split: train

@@ -1,9 +1,0 @@
-include: ../_nermud_yaml
-
-task: itabench_nermud_adg_cloze
-dataset_path: sapienzanlp/nermud
-dataset_name: ADG
-
-doc_to_text: "Data la frase: \"{{text}}\"\nL'entità {{target_entity}} è"
-doc_to_target: label
-doc_to_choice: ["un luogo", "un'organizzazione", "una persona"]

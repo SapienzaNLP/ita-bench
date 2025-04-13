@@ -1,22 +1,7 @@
-task: itabench_discotex_mc
+task: itabench_discotex_p4
 
-dataset_path: sapienzanlp/discotex
-output_type: multiple_choice
+description: "Indica la frase che rappresenta la continuazione più probabile del paragrafo, oppure \"nessuna delle precedenti\" se nessuna delle continuazioni è corretta."
 
-description: "Ti verranno poste delle domande nelle quali è presente un paragrafo, e come possibili risposte varie frasi che possono essere o meno la continuazione del paragrafo.\nIndica la frase che rappresenta la continuazione più probabile del paragrafo, oppure \"nessuna delle precedenti\" se nessuna delle continuazioni è corretta.\n\n"
-
-training_split: train
-validation_split: train
-test_split: test
-
-doc_to_text: "Paragrafo: \"{{text}}\"\nDomanda: Quali delle seguenti frasi è la continuazione più probabile del precedente paragrafo?\nA. \"{{choices[0]}}\"\nB. \"{{choices[1]}}\"\nC. \"{{choices[2]}}\"\nD. \"{{choices[3]}}\"\nE. {{choices[4]}}\nRisposta:"
+doc_to_text: "Paragrafo: \"{{text}}\"\nQuali delle seguenti frasi è la continuazione più probabile del precedente paragrafo?\nA. \"{{choices[0]}}\"\nB. \"{{choices[1]}}\"\nC. \"{{choices[2]}}\"\nD. \"{{choices[3]}}\"\nE. {{choices[4]}}\nRisposta:"
 doc_to_target: label
 doc_to_choice: ["A", "B", "C", "D", "E"]
-
-metric_list:
-  - metric: acc
-    aggregation: mean
-    higher_is_better: true
-
-metadata:
-  version: 1.0

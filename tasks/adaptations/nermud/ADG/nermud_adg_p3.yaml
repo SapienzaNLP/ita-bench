@@ -1,6 +1,6 @@
-include: ../_nermud_yaml
+include: _nermud_adg_yaml
 
-task: itabench_nermud_wn_mc
+task: itabench_nermud_adg_p3
 dataset_path: sapienzanlp/nermud
 dataset_name: WN
 
