@@ -1,7 +1,8 @@
+include: _discotex_yaml
+
 task: itabench_discotex_p6
 
-description: "Indica la frase che rappresenta la continuazione più probabile del paragrafo, oppure \"nessuna delle precedenti\" se nessuna delle continuazioni è corretta."
+doc_to_text: "Indica la frase che rappresenta la continuazione più probabile del paragrafo, oppure \"nessuna delle precedenti\" se nessuna delle continuazioni è corretta.\nParagrafo: \"{{text}}\"\nContinuazioni{{'\n- ' ~ choices[0] if not choices[0] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[1] if not choices[1] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[2] if not choices[2] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[3] if not choices[3] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[4] if not choices[4] == 'nessuna delle precedenti'}}\nTra le precedenti frasi la continuazione del paragrafo è:"
 
-doc_to_text: "Paragrafo: \"{{text}}\"\nContinuazioni\n-. \"{{choices[0]}}\"\n-. \"{{choices[1]}}\"\n-. \"{{choices[2]}}\"\n-. \"{{choices[3]}}\"\n-. {{choices[4]}}\nTra le precedenti frasi la continuazione del paragrafo è:"
 doc_to_target: label
 doc_to_choice: choices

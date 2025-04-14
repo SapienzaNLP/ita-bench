@@ -1,3 +1,5 @@
+include: _discotex_yaml
+
 task: itabench_discotex_p3
 
 doc_to_text: "Paragrafo: \"{{text}}\"\nQuali delle seguenti frasi è la continuazione più probabile del precedente paragrafo?\nA. \"{{choices[0]}}\"\nB. \"{{choices[1]}}\"\nC. \"{{choices[2]}}\"\nD. \"{{choices[3]}}\"\nE. {{choices[4]}}\nRisposta:"

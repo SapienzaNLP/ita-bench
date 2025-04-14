@@ -1,6 +1,6 @@
 include: _ghigliottinai_yaml
 
-task: itabench_ghigliottinai_p2
+task: itabench_ghigliottinai_p4
 
 doc_to_text: "Ti viene chiesto di risolvere il gioco della ghigliottina.\nIl gioco della ghigliottina consiste nel trovare un concetto che lega cinque parole date. Tale concetto è esprimibile tramite una singola parola.\nDate le parole: {{w1}}, {{w2}}, {{w3}}, {{w4}}, {{w5}}\nQuale tra i seguenti concetti è quello che lega le parole date?\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nRisposta:"
 doc_to_target: label

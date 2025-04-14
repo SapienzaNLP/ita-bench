@@ -2,6 +2,6 @@ include: _pretens_yaml
 
 task: itabench_pretens_p3
 
-doc_to_text: "{{text}}\nDomanda: La frase precedente ha senso?\nA. no\nB. sì"
+doc_to_text: "{{text}}\nDomanda: La frase precedente ha senso?\nA. no\nB. sì\nRisposta:"
 doc_to_target: label
 doc_to_choice: ["A", "B"]

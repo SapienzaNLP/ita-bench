@@ -1,7 +1,7 @@
+include: _discotex_yaml
+
 task: itabench_discotex_p4
 
-description: "Indica la frase che rappresenta la continuazione più probabile del paragrafo, oppure \"nessuna delle precedenti\" se nessuna delle continuazioni è corretta."
-
-doc_to_text: "Paragrafo: \"{{text}}\"\nQuali delle seguenti frasi è la continuazione più probabile del precedente paragrafo?\nA. \"{{choices[0]}}\"\nB. \"{{choices[1]}}\"\nC. \"{{choices[2]}}\"\nD. \"{{choices[3]}}\"\nE. {{choices[4]}}\nRisposta:"
+doc_to_text: "Indica la frase che rappresenta la continuazione più probabile del paragrafo, oppure \"nessuna delle precedenti\" se nessuna delle continuazioni è corretta.\nParagrafo: \"{{text}}\"\nQuali delle seguenti frasi è la continuazione più probabile del precedente paragrafo?\nA. \"{{choices[0]}}\"\nB. \"{{choices[1]}}\"\nC. \"{{choices[2]}}\"\nD. \"{{choices[3]}}\"\nE. {{choices[4]}}\nRisposta:"
 doc_to_target: label
 doc_to_choice: ["A", "B", "C", "D", "E"]
