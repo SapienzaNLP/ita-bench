@@ -1,0 +1,6 @@
+include: _prelearn_data_mining_yaml
+
+task: itabench_prelearn_data_mining_p2
+doc_to_text: "Dati due concetti A e B, indica se il primo concetto è un prerequisito per il secondo.\nIl concetto A è prerequisito per il concetto B, se per comprendere B devi prima aver compreso A.\nI seguenti concetti appartengono al dominio: Data Mining.\nDomanda: il concetto \"{{concept_B}}\" è un prerequisito per la comprensione del concetto \"{{concept_A}}\"? Rispondi sì o no:"
+doc_to_target: target
+doc_to_choice: ["no", "sì"]

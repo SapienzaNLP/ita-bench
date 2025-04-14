@@ -1,9 +1,0 @@
-group: itabench_nermud
-task:
-- itabench_nermud_adg_mp
-- itabench_nermud_wn_mp
-aggregate_metric_list:
-  - metric: acc
-    aggregation: mean
-  - metric: acc_norm
-    aggregation: mean

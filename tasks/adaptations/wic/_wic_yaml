@@ -1,7 +1,7 @@
 dataset_path: sapienzanlp/wic
 output_type: multiple_choice
 
-description: "Date due frasi, che contengono un lemma in comune, indica se tale lemma ha lo stesso significato in entrambe le frasi.\n\n"
+tag: itabench_wic_mp
 
 training_split: validation
 validation_split: validation

@@ -1,0 +1,6 @@
+include: _prelearn_physics_yaml
+
+task: itabench_prelearn_physics_p3
+doc_to_text: "Domanda: il concetto \"{{concept_B}}\" è un prerequisito per la comprensione del concetto \"{{concept_A}}\"?\nA. no\n B. sì\nRisposta:"
+doc_to_target: target
+doc_to_choice: ["A", "B"]

@@ -1,7 +1,7 @@
 dataset_path: sapienzanlp/pretens
 output_type: multiple_choice
 
-description: "Indica se le seguenti frasi hanno senso.\n\n"
+tag: itabench_pretens_mp
 
 training_split: train
 validation_split: train

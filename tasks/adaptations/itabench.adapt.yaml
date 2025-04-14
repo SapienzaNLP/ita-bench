@@ -1,0 +1,9 @@
+group: itabench_adapt
+
+task:
+  - itabench_ami
+  - itabench_ghigliottinai
+  - itabench_nermud
+  - itabench_prelearn
+  - itabench_pretens
+  - itabench_wic

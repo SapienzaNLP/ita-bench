@@ -1,0 +1,6 @@
+include: _quandho_yaml
+task: itabench_quandho_p6
+
+doc_to_text: "Ti saranno poste domande di storia italiana.\nIdentifica quali paragrafi contengono la risposta alle domande date.\nData la domanda: \"{{question}}\"\nQuale tra i seguenti paragrafi risponde alla domanda?\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nRisposta:"
+doc_to_target: label
+doc_to_choice: "{{choices}}"

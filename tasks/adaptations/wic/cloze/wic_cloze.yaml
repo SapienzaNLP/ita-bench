@@ -1,7 +1,0 @@
-include: ../_wic_yaml
-
-task: itabench_wic_cloze
-
-doc_to_text: "Frase 1: {{sentence1}}\nFrase 2: {{sentence2}}\nLa parola \"{{lemma}}\" ha"
-doc_to_target: label
-doc_to_choice: ["un significato differente tra le due frasi", "lo stesso significato in entrambe le frasi"]

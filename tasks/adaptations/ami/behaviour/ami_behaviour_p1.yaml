@@ -1,6 +1,5 @@
 include: _ami_behaviour_yaml
 task: itabench_ami_behaviour_p1
-dataset_name: Behaviour
 
 doc_to_text: "Quale è il livello di misoginia presenten nel seguente tweet '{{text}}'?"
 doc_to_target: label

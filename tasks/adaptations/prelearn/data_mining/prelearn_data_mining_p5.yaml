@@ -1,0 +1,6 @@
+include: _prelearn_data_mining_yaml
+
+task: itabench_prelearn_data_mining_p5
+doc_to_text: "{{concept_B}}"
+doc_to_target: target
+doc_to_choice: !function ..utils.doc_to_choice

@@ -1,0 +1,6 @@
+include: _prelearn_physics_yaml
+
+task: itabench_prelearn_physics_p6
+doc_to_text: "Dati due concetti A e B, indica se il primo concetto è un prerequisito per il secondo.\nIl concetto A è prerequisito per il concetto B, se per comprendere B devi prima aver compreso A.\nI seguenti concetti appartengono al dominio: Fisica.\n{{concept_B}}"
+doc_to_target: target
+doc_to_choice: !function ..utils.doc_to_choice

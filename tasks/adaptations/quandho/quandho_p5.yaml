@@ -1,0 +1,6 @@
+include: _quandho_yaml
+task: itabench_quandho_p5
+
+doc_to_text: "Data la domanda: \"{{question}}\"\nIl seguente paragrafo risponde alla domanda data:"
+doc_to_target: label
+doc_to_choice: "{{choices}}"

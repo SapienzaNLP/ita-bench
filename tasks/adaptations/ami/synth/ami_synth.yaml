@@ -1,0 +1,8 @@
+group: itabench_ami_synth
+task:
+  - itabench_ami_synth_mp
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+  - metric: acc_norm
+    aggregation: mean

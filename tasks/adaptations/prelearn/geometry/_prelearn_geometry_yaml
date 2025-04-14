@@ -1,0 +1,20 @@
+dataset_path: sapienzanlp/prelearn
+dataset_name: geometry
+output_type: multiple_choice
+
+tag: itabench_prelearn_geometry_mp
+
+training_split: train
+validation_split: train
+test_split: test
+
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+
+metadata:
+  version: 1.0

@@ -1,0 +1,6 @@
+include: _quandho_yaml
+task: itabench_quandho_p1
+
+doc_to_text: "Domanda: \"{{question}}\"\nRisposta:"
+doc_to_target: label
+doc_to_choice: "{{choices}}"

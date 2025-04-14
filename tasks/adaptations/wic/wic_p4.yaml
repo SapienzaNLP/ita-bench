@@ -1,0 +1,7 @@
+include: _wic_yaml
+
+task: itabench_wic_p4
+
+doc_to_text: "Date due frasi, che contengono un lemma in comune, indica se tale lemma ha lo stesso significato in entrambe le frasi.\nFrase 1: {{sentence1}}\nFrase 2: {{sentence2}}\nDomanda: La parola \"{{lemma}}\" ha lo stesso signicato nelle due frasi precedenti?\nA. no\nB. sì\nRisposta:"
+doc_to_target: label
+doc_to_choice: ["A", "B"]

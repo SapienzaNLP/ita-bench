@@ -2,6 +2,8 @@ dataset_path: sapienzanlp/ami
 output_type: multiple_choice
 tag: itabench_ami_behaviour_mp
 
+dataset_name: Behaviour
+
 training_split: train
 validation_split: train
 test_split: test

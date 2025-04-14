@@ -1,0 +1,11 @@
+group: itabench_prelearn
+task:
+  - itabench_prelearn_data_mining
+  - itabench_prelearn_geometry
+  - itabench_prelearn_physics
+  - itabench_prelearn_precalculus
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+  - metric: acc_norm
+    aggregation: mean

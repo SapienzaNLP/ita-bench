@@ -1,6 +1,6 @@
 include: _ami_synth_yaml
 task: itabench_ami_synth_p5
-dataset_name: Synth
+
 doc_to_text: "Il seguente tweet: '{{text}}'"
 doc_to_target: label
 doc_to_choice: ["non presenta caratteristiche misogine", "presenta caratteristiche misogine"]

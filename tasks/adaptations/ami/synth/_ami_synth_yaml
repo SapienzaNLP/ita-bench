@@ -1,6 +1,7 @@
 dataset_path: sapienzanlp/ami
 output_type: multiple_choice
 tag: itabench_ami_synth_mp
+dataset_name: Synth
 
 training_split: train
 validation_split: train

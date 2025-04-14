@@ -1,6 +1,0 @@
-include: ../_prelearn_geometry_yaml
-
-task: itabench_prelearn_geometry_cloze
-doc_to_text: "{{concept_B}}"
-doc_to_target: target
-doc_to_choice: !function utils.doc_to_choice

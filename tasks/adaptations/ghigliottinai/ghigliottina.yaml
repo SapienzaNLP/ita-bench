@@ -1,6 +1,6 @@
 group: itabench_ghigliottina
 task:
-  - itabench_ghighliottina_mp
+  - itabench_ghigliottina_mp
 
 aggregate_metric_list:
   - metric: acc

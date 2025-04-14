@@ -1,0 +1,9 @@
+group: itabench_wic
+task:
+  - itabench_wic_mp
+
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+  - metric: acc_norm
+    aggregation: mean

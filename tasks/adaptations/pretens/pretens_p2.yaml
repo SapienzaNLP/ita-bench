@@ -1,0 +1,7 @@
+include: _pretens_yaml
+
+task: itabench_pretens_p2
+
+doc_to_text: "Indica se le seguenti frasi hanno senso.\n{{text}}\nDomanda: La frase precedente ha senso? Rispondi sì o no:"
+doc_to_target: label
+doc_to_choice: ["no", "sì"]

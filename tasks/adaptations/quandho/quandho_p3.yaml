@@ -1,0 +1,6 @@
+include: _quandho_yaml
+task: itabench_quandho_p3
+
+doc_to_text: "Domanda: {{question}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nRisposta:"
+doc_to_target: label
+doc_to_choice: ["A", "B", "C", "D"]

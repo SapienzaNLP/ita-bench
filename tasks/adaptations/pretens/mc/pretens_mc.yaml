@@ -1,7 +1,0 @@
-include: ../_pretens_yaml
-
-task: itabench_pretens_mc
-
-doc_to_text: "{{text}}\nDomanda: La frase precedente ha senso? Rispondi sì o no:"
-doc_to_target: label
-doc_to_choice: ["no", "sì"]
