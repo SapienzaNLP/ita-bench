@@ -1,6 +1,6 @@
 include: _ami_behaviour_yaml
 task: itabench_ami_behaviour_p1
 
-doc_to_text: "Quale è il livello di misoginia presenten nel seguente tweet '{{text}}'?"
+doc_to_text: "Quale è il livello di misoginia presente nel seguente tweet '{{text}}'?"
 doc_to_target: label
 doc_to_choice: ["Nessuno", "Misogino", "Misogino aggressivo"]

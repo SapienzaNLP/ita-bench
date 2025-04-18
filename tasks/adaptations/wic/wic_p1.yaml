@@ -2,6 +2,6 @@ include: _wic_yaml
 
 task: itabench_wic_p1
 
-doc_to_text: "Frase 1: {{sentence1}}\nFrase 2: {{sentence2}}\nDomanda: La parola \"{{lemma}}\" ha lo stesso signicato nelle due frasi precedenti? Rispondi sì o no:"
+doc_to_text: "Frase 1: {{sentence1}}\nFrase 2: {{sentence2}}\nDomanda: La parola \"{{lemma}}\" ha lo stesso signicato nelle due frasi precedenti?"
 doc_to_target: label
 doc_to_choice: ["no", "sì"]

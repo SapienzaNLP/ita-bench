@@ -1,6 +1,6 @@
 include: _ami_behaviour_yaml
 task: itabench_ami_behaviour_p4
 
-doc_to_text: "Indica il livello di misoginia presente nei seguenti tweet.\nQuale è il livello di misoginia presenten nel seguente tweet '{{text}}'?\nA. Nessuno\nB. Misogino\nC. Misogino aggressivo\nRisposta:"
+doc_to_text: "Devi comprendere se un tweet presenta caretteristiche misogine\nQuale è il livello di misoginia presenten nel seguente tweet '{{text}}'?\nA. Nessuno\nB. Misogino\nC. Misogino aggressivo\nRisposta:"
 doc_to_target: label
 doc_to_choice: ["A", "B", "C"]

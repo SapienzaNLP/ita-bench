@@ -1,6 +1,6 @@
 include: _prelearn_geometry_yaml
 
 task: itabench_prelearn_geometry_p1
-doc_to_text: "Domanda: il concetto \"{{concept_B}}\" è un prerequisito per la comprensione del concetto \"{{concept_A}}\"? Rispondi sì o no:"
+doc_to_text: "Domanda: il concetto \"{{concept_B}}\" è un prerequisito per la comprensione del concetto \"{{concept_A}}\"?"
 doc_to_target: target
 doc_to_choice: ["no", "sì"]

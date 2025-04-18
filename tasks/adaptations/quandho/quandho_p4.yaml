@@ -1,6 +1,6 @@
 include: _quandho_yaml
 task: itabench_quandho_p4
 
-doc_to_text: "Dovrai rispondere in maniera dettagliata a domande di storia italiana.\nDomanda: {{question}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nRisposta:"
+doc_to_text: "Dovrai rispondere in maniera dettagliata a domande di storia italiana.\nDomanda: {{question}}?\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nRisposta:"
 doc_to_target: label
 doc_to_choice: ["A", "B", "C", "D"]

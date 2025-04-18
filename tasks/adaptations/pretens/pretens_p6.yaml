@@ -2,6 +2,6 @@ include: _pretens_yaml
 
 task: itabench_pretens_p6
 
-doc_to_text: "Indica se le seguenti frasi hanno senso.\n{{text}}\nLa frase precedente"
+doc_to_text: "Devi capire se una frase data ha semanticamente senso\n{{text}}\nLa frase precedente"
 doc_to_target: label
 doc_to_choice: ["non ha senso", "ha senso"]

@@ -1,6 +1,6 @@
 include: _ami_synth_yaml
 task: itabench_ami_synth_p1
 
-doc_to_text: "Quale è il livello di misoginia nel seguente tweet '{{text}}'?"
+doc_to_text: "Il seguente tweet contiene caratteristiche misogine: '{{text}}'?"
 doc_to_target: label
-doc_to_choice: ["Neutro", "Misogino"]
+doc_to_choice: ["no", "sì"]

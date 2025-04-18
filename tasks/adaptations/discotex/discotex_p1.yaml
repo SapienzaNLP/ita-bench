@@ -3,6 +3,5 @@ include: _discotex_yaml
 task: itabench_discotex_p1
 
 doc_to_text: "Paragrafo: \"{{text}}\"\nContinuazioni{{'\n- ' ~ choices[0] if not choices[0] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[1] if not choices[1] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[2] if not choices[2] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[3] if not choices[3] == 'nessuna delle precedenti'}}{{'\n- ' ~ choices[4] if not choices[4] == 'nessuna delle precedenti'}}\n\nQuali delle precedenti frasi è la continuazione più probabile del paragrafo?"
-
 doc_to_target: label
 doc_to_choice: choices
