@@ -112,12 +112,24 @@ However, the datasets included in ITA-Bench may have different licenses. Please 
 If you use this benchmark or part of it, consider to cite us:
 
 ```bibtex
-@inproceedings{moroni2024ita,
-  title={{ITA-Bench}: Towards a More Comprehensive Evaluation for {I}talian {LLMs}},
-  author={Moroni, Luca and Conia, Simone and Martelli, Federico and Navigli, Roberto},
-  booktitle={Proceedings of the Tenth Italian Conference on Computational Linguistics (CLiC-it 2024)},
-  year={2024},
-  url={https://clic2024.ilc.cnr.it/wp-content/uploads/2024/12/66_main_long.pdf},
+@inproceedings{moroni-etal-2024-towards,
+    title = "Towards a More Comprehensive Evaluation for {I}talian {LLM}s",
+    author = "Moroni, Luca  and
+      Conia, Simone  and
+      Martelli, Federico  and
+      Navigli, Roberto",
+    editor = "Dell'Orletta, Felice  and
+      Lenci, Alessandro  and
+      Montemagni, Simonetta  and
+      Sprugnoli, Rachele",
+    booktitle = "Proceedings of the 10th Italian Conference on Computational Linguistics (CLiC-it 2024)",
+    month = dec,
+    year = "2024",
+    address = "Pisa, Italy",
+    publisher = "CEUR Workshop Proceedings",
+    url = "https://aclanthology.org/2024.clicit-1.67/",
+    pages = "584--599",
+    ISBN = "979-12-210-7060-6",
 }
 ```
 
