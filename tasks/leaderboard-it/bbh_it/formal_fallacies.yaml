@@ -1,0 +1,41 @@
+dataset_name: formal_fallacies
+description: 'Distinguish deductively valid arguments from formal fallacies.'
+doc_to_choice: ["valid", "invalid"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input: "\"Non è sempre facile vedere chi è imparentato con chi — e in che modo.
+      Il seguente argomento riguarda questa domanda: Per cominciare, Lesley è un’amica intima di Fernando. Inoltre, essere un amico intimo di Fernando o un compagno di scuola di Lowell è sufficiente per essere un bisnonno di Leroy. Ne consegue che Lesley è un bisnonno di Leroy.\"
+
+      L’argomento, date le premesse esplicitamente dichiarate, è deduttivamente valido o invalido?
+
+      Opzioni:
+
+      - valido
+
+      - invalido"
+    target: valido
+  - input: "\"Non è sempre facile vedere chi è imparentato con chi — e in che modo.
+      Il seguente argomento riguarda questa domanda: Chiunque non sia un bisnonno di Clyde è un fratellastro di Brian. Essere un antenato di Dana è sufficiente per non essere un bisnonno di Clyde. Possiamo concludere: Chiunque sia un antenato di Dana è anche un fratellastro di Brian.\"
+
+      L’argomento, date le premesse esplicitamente dichiarate, è deduttivamente valido o invalido?
+
+      Opzioni:
+
+      - valido
+
+      - invalido"
+    target: valido
+  - input: "\"Non è sempre facile capire chi consuma quali prodotti.
+      Il seguente argomento riguarda questa domanda: Ogni utilizzatore occasionale di shampoo Paul Mitchell è o un consumatore raro di shampoo Nioxin o un acquirente fedele di sapone Caress, o entrambi. Nessun consumatore abituale di sapone Lush è contemporaneamente un consumatore raro di shampoo Nioxin e un acquirente fedele di sapone Caress. Ne consegue che chiunque sia un utilizzatore occasionale di shampoo Paul Mitchell non è un consumatore abituale di sapone Lush.\"
+
+      L’argomento, date le premesse esplicitamente dichiarate, è deduttivamente valido o invalido?
+
+      Opzioni:
+
+      valido
+
+      invalido"
+    target: invalido
+include: _fewshot_template_yaml
+task: leaderboard_bbh_formal_fallacies

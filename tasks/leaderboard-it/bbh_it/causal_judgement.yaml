@@ -1,0 +1,38 @@
+dataset_name: causal_judgement
+description: "Rispondere alle domande sull'attribuzione causale."
+doc_to_choice: ["Sì", "No"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input: "Come risponderebbe una persona tipica a ciascuna delle seguenti domande sulla causalità?
+
+      Frank T. aveva una disputa in corso con il suo vicino per un tratto di terreno e un giorno decise di sparare al vicino al corpo. Frank T. non aveva esperienza con le armi, la sua mano scivolò sulla canna della pistola e il colpo andò fuori bersaglio. Tuttavia, il proiettile rimbalzò su un grande masso a qualche metro di distanza e colpì il corpo del vicino, causando gravi ferite. Frank T. ha sparato intenzionalmente al vicino al corpo?
+
+      Opzioni:
+
+      - Sì
+
+      - No"
+    target: 'No'
+  - input: "Come risponderebbe una persona tipica a ciascuna delle seguenti domande sulla causalità?
+
+      Suzy e Billy stanno lavorando a un progetto molto importante per la sicurezza della nostra nazione. Il capo dice a entrambi: «Assicuratevi di essere qui esattamente alle 9 del mattino. È assolutamente essenziale che arriviate a quell’ora». Sia Billy che Suzy arrivano alle 9 del mattino. Per coincidenza, nella stanza in cui arrivano era stato installato un rilevatore di movimento. Il rilevatore era impostato per attivarsi se almeno una persona appariva nella stanza allo stesso tempo. Quindi il rilevatore di movimento si attivò. Billy ha causato l’attivazione del rilevatore di movimento?
+
+      Opzioni:
+
+      - Sì
+
+      - No"
+    target: 'Sì'
+  - input: "Come risponderebbe una persona tipica a ciascuna delle seguenti domande sulla causalità?
+
+      George e sua sorella Lena si riuniscono a casa dei loro genitori per il Giorno del Ringraziamento. Mentre George è appena stato ammesso alla facoltà di medicina, Lena è infelice nel suo matrimonio e ha recentemente perso il lavoro. Nel corso della giornata, George e Lena hanno una serie di accese discussioni. Più tardi nel pomeriggio giocano a freccette. Vincono una partita ciascuno e la terza è combattuta fino alla fine. Chi vincerà dipende dall’ultimo tiro di George. Se colpisce una zona ad alto punteggio, vince lui; se colpisce una zona a basso punteggio, vince Lena. George pensa al periodo difficile che sta attraversando Lena e vuole davvero lasciarla vincere. Mira la freccetta alla zona a basso punteggio. Prepara il tiro e la freccetta finisce nella zona a basso punteggio. Dopo il suo tiro, Lena vince la partita ed è molto felice. George ha colpito intenzionalmente la zona a basso punteggio?
+
+      Opzioni:
+
+      - Sì
+
+      - No"
+    target: 'Sì'
+include: _fewshot_template_yaml
+task: leaderboard_bbh_causal_judgement
