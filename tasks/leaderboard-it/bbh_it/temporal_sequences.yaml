@@ -1,99 +1,87 @@
 dataset_name: temporal_sequences
-description: 'Task description: Answer questions about which times certain events
-  could have occurred.'
+description: "Descrizione dell'attività: rispondere a domande su in quali momenti potrebbero essersi verificati determinati eventi."
 doc_to_choice: ["(A)","(B)","(C)","(D)"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: 'Today, Emily went to the museum. Between what times could they have gone?
+  - input_translated: "Oggi Emily è andata al museo. Tra quali orari ci sarebbe potuta andare?
 
-      We know that:
+      Sappiamo che:
 
-      Emily woke up at 1pm.
+      Emily si è svegliata alle 13:00.
 
-      Elizabeth saw Emily reading at the library from 2pm to 4pm.
+      Elizabeth ha visto Emily leggere in biblioteca dalle 14:00 alle 16:00.
 
-      Jessica saw Emily watching a movie at the theater from 4pm to 5pm.
+      Jessica ha visto Emily guardare un film al cinema dalle 16:00 alle 17:00.
 
-      Leslie saw Emily waiting at the airport from 5pm to 6pm.
+      Leslie ha visto Emily aspettare all’aeroporto dalle 17:00 alle 18:00.
 
-      William saw Emily buying clothes at the mall from 6pm to 7pm.
+      William ha visto Emily comprare vestiti al centro commerciale dalle 18:00 alle 19:00.
 
-      The museum was closed after 7pm.
+      Il museo era chiuso dopo le 19:00.
 
-      Between what times could Emily have gone to the museum?
+      Tra quali orari Emily avrebbe potuto andare al museo?
 
-      Options:
+      Opzioni:
 
-      (A) 1pm to 2pm
+      (A) 13:00-14:00
+      (B) 18:00-19:00
+      (C) 17:00-18:00
+      (D) 14:00-16:00"
+    target_translated: (A)
+  - input_translated: "Oggi Elizabeth è andata al parco divertimenti. Tra quali orari ci sarebbe potuta andare?
 
-      (B) 6pm to 7pm
+      Sappiamo che:
 
-      (C) 5pm to 6pm
+      Elizabeth si è svegliata alle 7:00.
 
-      (D) 2pm to 4pm'
-    target: (A)
-  - input: 'Today, Elizabeth went to the amusement park. Between what times could
-      they have gone?
+      David ha visto Elizabeth riparare il suo computer al negozio di elettronica dalle 13:00 alle 14:00.
 
-      We know that:
+      Sarah ha visto Elizabeth giocare a tennis al campo da tennis dalle 14:00 alle 15:00.
 
-      Elizabeth woke up at 7am.
+      Susan ha visto Elizabeth camminare verso la Statua della Libertà dalle 15:00 alle 18:00.
 
-      David saw Elizabeth fixing their computer at the electronic store from 1pm to
-      2pm.
+      Andrew ha visto Elizabeth fare foto vicino alla Torre Eiffel dalle 18:00 alle 21:00.
 
-      Sarah saw Elizabeth playing tennis at the tennis court from 2pm to 3pm.
+      Emily ha visto Elizabeth prendere un caffè al bar dalle 21:00 alle 22:00.
 
-      Susan saw Elizabeth walking towards the Statue of Liberty from 3pm to 6pm.
+      Il parco divertimenti era chiuso dopo le 22:00.
 
-      Andrew saw Elizabeth taking photos near the Eiffel Tower from 6pm to 9pm.
+      Tra quali orari Elizabeth avrebbe potuto andare al parco divertimenti?
 
-      Emily saw Elizabeth getting a coffee at the cafe from 9pm to 10pm.
+      Opzioni:
 
-      The amusement park was closed after 10pm.
+      (A) 7:00-13:00
+      (B) 21:00-22:00
+      (C) 13:00-14:00
+      (D) 15:00-18:00"
+    target_translated: (A)
+  - input_translated: "Oggi Tiffany è andata in spiaggia. Tra quali orari ci sarebbe potuta andare?
 
-      Between what times could Elizabeth have gone to the amusement park?
+      Sappiamo che:
 
-      Options:
+      Tiffany si è svegliata alle 5:00.
 
-      (A) 7am to 1pm
+      Betty ha visto Tiffany prendere un caffè al bar dalle 5:00 alle 6:00.
 
-      (B) 9pm to 10pm
+      Jessica ha visto Tiffany lavorare in ufficio dalle 6:00 alle 9:00.
 
-      (C) 1pm to 2pm
+      John ha visto Tiffany fare stretching in uno studio di yoga dalle 9:00 alle 12:00.
 
-      (D) 3pm to 6pm'
-    target: (A)
-  - input: 'Today, Tiffany went to the beach. Between what times could they have gone?
+      Sean ha visto Tiffany seduta su un rooftop dalle 12:00 alle 14:00.
 
-      We know that:
+      Sarah ha visto Tiffany giocare a tennis al campo da tennis dalle 14:00 alle 15:00.
 
-      Tiffany woke up at 5am.
+      La spiaggia era chiusa dopo le 16:00.
 
-      Betty saw Tiffany getting a coffee at the cafe from 5am to 6am.
+      Tra quali orari Tiffany avrebbe potuto andare in spiaggia?
 
-      Jessica saw Tiffany working at the office from 6am to 9am.
+      Opzioni:
 
-      John saw Tiffany stretching at a yoga studio from 9am to 12pm.
-
-      Sean saw Tiffany sitting on a rooftop from 12pm to 2pm.
-
-      Sarah saw Tiffany playing tennis at the tennis court from 2pm to 3pm.
-
-      The beach was closed after 4pm.
-
-      Between what times could Tiffany have gone to the beach?
-
-      Options:
-
-      (A) 9am to 12pm
-
-      (B) 12pm to 2pm
-
-      (C) 5am to 6am
-
-      (D) 3pm to 4pm'
-    target: (D)
+      (A) 9:00-12:00
+      (B) 12:00-14:00
+      (C) 5:00-6:00
+      (D) 15:00-16:00"
+    target_translated: (D)
 include: _fewshot_template_yaml
 task: leaderboard_bbh_temporal_sequences

@@ -1,66 +1,69 @@
 dataset_name: penguins_in_a_table
-description: 'Answer questions about a table of penguins and their attributes.'
+description: 'Rispondi alle domande su una tabella di pinguini e sulle loro caratteristiche.'
 doc_to_choice: ["(A)","(B)","(C)","(D)","(E)"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: 'Here is a table where the first line is a header and each subsequent line
-      is a penguin:  name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard,
-      5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15  For example: the age of Louis
-      is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm.  We now add
-      a penguin to the table:
+  - input_translated: "Ecco una tabella in cui la prima riga è un'intestazione e ogni riga successiva è un pinguino:
+      nome, età, altezza (cm), peso (kg)
+      Louis, 7, 50, 11
+      Bernard, 5, 80, 13
+      Vincent, 9, 60, 11
+      Gwen, 8, 70, 15
+
+      Per esempio: l'età di Louis è 7, il peso di Gwen è 15 kg, l’altezza di Bernard è 80 cm.
+
+      Ora aggiungiamo un pinguino alla tabella:
 
       James, 12, 90, 12
 
-      How many penguins are less than 8 years old?
+      Quanti pinguini hanno meno di 8 anni?
 
-      Options:
+      Opzioni:
 
       (A) 1
-
       (B) 2
-
       (C) 3
-
       (D) 4
+      (E) 5"
+    target_translated: (B)
+  - input_translated: "Ecco una tabella in cui la prima riga è un'intestazione e ogni riga successiva è un pinguino:
+      nome, età, altezza (cm), peso (kg)
+      Louis, 7, 50, 11
+      Bernard, 5, 80, 13
+      Vincent, 9, 60, 11
+      Gwen, 8, 70, 15
 
-      (E) 5'
-    target: (B)
-  - input: 'Here is a table where the first line is a header and each subsequent line
-      is a penguin:  name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard,
-      5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15  For example: the age of Louis
-      is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm.  Which is
-      the youngest penguin?
+      Per esempio: l'età di Louis è 7, il peso di Gwen è 15 kg, l’altezza di Bernard è 80 cm.
 
-      Options:
+      Qual è il pinguino più giovane?
 
-      (A) Louis
-
-      (B) Bernard
-
-      (C) Vincent
-
-      (D) Gwen
-
-      (E) James'
-    target: (B)
-  - input: 'Here is a table where the first line is a header and each subsequent line
-      is a penguin:  name, age, height (cm), weight (kg) Louis, 7, 50, 11 Bernard,
-      5, 80, 13 Vincent, 9, 60, 11 Gwen, 8, 70, 15  For example: the age of Louis
-      is 7, the weight of Gwen is 15 kg, the height of Bernard is 80 cm.  What is
-      the name of the second penguin sorted by alphabetic order?
-
-      Options:
+      Opzioni:
 
       (A) Louis
-
       (B) Bernard
-
       (C) Vincent
-
       (D) Gwen
+      (E) James"
+    target_translated: (B)
+  - input_translated: "Ecco una tabella in cui la prima riga è un'intestazione e ogni riga successiva è un pinguino:
+      nome, età, altezza (cm), peso (kg)
+      Louis, 7, 50, 11
+      Bernard, 5, 80, 13
+      Vincent, 9, 60, 11
+      Gwen, 8, 70, 15
 
-      (E) James'
-    target: (D)
+      Per esempio: l'età di Louis è 7, il peso di Gwen è 15 kg, l’altezza di Bernard è 80 cm.
+
+      Qual è il nome del secondo pinguino in ordine alfabetico?
+
+      Opzioni:
+
+      (A) Louis
+      (B) Bernard
+      (C) Vincent
+      (D) Gwen
+      (E) James"
+    target_translated: (D)
 include: _fewshot_template_yaml
 task: leaderboard_bbh_penguins_in_a_table

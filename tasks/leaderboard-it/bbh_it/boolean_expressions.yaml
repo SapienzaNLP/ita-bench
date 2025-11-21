@@ -4,11 +4,11 @@ doc_to_choice: ["Falso", "Vero"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: no ( ( no no Vero ) ) è
-    target: 'Falso'
-  - input: Vero e Falso e no Vero e Vero è
-    target: 'Falso'
-  - input: no no ( no ( Falso ) ) è
-    target: 'Vero'
+  - input_translated: no ( ( no no Vero ) ) è
+    target_translated: 'Falso'
+  - input_translated: Vero e Falso e no Vero e Vero è
+    target_translated: 'Falso'
+  - input_translated: no no ( no ( Falso ) ) è
+    target_translated: 'Vero'
 include: _fewshot_template_yaml
 task: leaderboard_bbh_boolean_expressions

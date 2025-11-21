@@ -1,11 +1,10 @@
 dataset_name: logical_deduction_seven_objects
-description: 'A logical deduction task which requires deducing the order of a sequence
-  of objects.'
+description: "Risolvi un compito di deduzione logica che richiede di dedurre l'ordine di una sequenza di oggetti."
 doc_to_choice: ["(A)","(B)","(C)","(D)","(E)","(F)","(G)"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: "I seguenti paragrafi descrivono ciascuno un insieme di tre oggetti disposti in un ordine fisso. Le affermazioni sono logicamente coerenti all’interno di ogni paragrafo.
+  - input_translated: "I seguenti paragrafi descrivono ciascuno un insieme di tre oggetti disposti in un ordine fisso. Le affermazioni sono logicamente coerenti all’interno di ogni paragrafo.
       In un torneo di golf c’erano tre golfisti: Amy, Eli ed Eve. Eve è arrivata davanti ad Amy. Eli è arrivato dietro ad Amy.
 
       Opzioni:
@@ -13,8 +12,8 @@ fewshot_config:
       (A) Amy è arrivata ultima
       (B) Eli è arrivato ultimo
       (C) Eve è arrivata ultima"
-    target: (B)
-  - input: "I seguenti paragrafi descrivono ciascuno un insieme di tre oggetti disposti in un ordine fisso. Le affermazioni sono logicamente coerenti all’interno di ogni paragrafo.
+    target_translated: (B)
+  - input_translated: "I seguenti paragrafi descrivono ciascuno un insieme di tre oggetti disposti in un ordine fisso. Le affermazioni sono logicamente coerenti all’interno di ogni paragrafo.
       Su uno scaffale ci sono tre libri: un libro bianco, un libro verde e un libro arancione. Il libro verde è a destra del libro bianco. Il libro arancione è quello più a destra.
 
       Opzioni:
@@ -22,8 +21,8 @@ fewshot_config:
       (A) Il libro bianco è quello più a sinistra
       (B) Il libro verde è quello più a sinistra
       (C) Il libro arancione è quello più a sinistra"
-    target: (A)
-  - input: "I seguenti paragrafi descrivono ciascuno un insieme di tre oggetti disposti in un ordine fisso. Le affermazioni sono logicamente coerenti all’interno di ogni paragrafo.
+    target_translated: (A)
+  - input_translated: "I seguenti paragrafi descrivono ciascuno un insieme di tre oggetti disposti in un ordine fisso. Le affermazioni sono logicamente coerenti all’interno di ogni paragrafo.
       Su uno scaffale ci sono tre libri: un libro rosso, un libro grigio e un libro bianco. Il libro bianco è alla sinistra del libro grigio. Il libro rosso è il secondo da sinistra.
 
       Opzioni:
@@ -31,6 +30,6 @@ fewshot_config:
       (A) Il libro rosso è quello più a sinistra
       (B) Il libro grigio è quello più a sinistra
       (C) Il libro bianco è quello più a sinistra"
-    target: (C)
+    target_translated: (C)
 include: _fewshot_template_yaml
 task: leaderboard_bbh_logical_deduction_seven_objects

@@ -1,42 +1,39 @@
 dataset_name: snarks
-description: 'Determine which of two sentences is sarcastic.
+description: "Determina quale delle due frasi è sarcastica.
 
-
-  According to Cambridge University Dictionary, sarcasm is "the use of remarks that
-  clearly mean the opposite of what they say, made in order to hurt someone''s feelings
-  or to criticize something in a humorous way." Sarcastic sentences often contain
-  satirical or ironic utterances, hyperboles, ambivalent or witty remarks.'
+      Secondo il Cambridge University Dictionary, il sarcasmo è: 
+      
+      l'uso di osservazioni che significano chiaramente l'opposto di ciò che dicono, fatte allo scopo di ferire i sentimenti di qualcuno
+      o di criticare qualcosa in modo umoristico. 
+      
+      Le frasi sarcastiche contengono spesso espressioni satiriche o ironiche, iperboli, osservazioni ambivalenti o spiritose."
 doc_to_choice: ["(A)","(B)"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: 'Which statement is sarcastic?
+  - input_translated: "Quale affermazione è sarcastica?
 
-      Options:
+      Opzioni:
 
-      (A) Yes, because having interests and actively researching them is a huge waste
+      (A) Sì, perché avere interessi e informarsi attivamente su di essi è un enorme spreco
 
-      (B) Yes, because having interests and actively researching them is a huge deal'
-    target: (A)
-  - input: 'Which statement is sarcastic?
+      (B) Sì, perché avere interessi e informarsi attivamente su di essi è una cosa enorme"
+    target_translated: (A)
+  - input_translated: "Quale affermazione è sarcastica?
 
-      Options:
+      Opzioni:
 
-      (A) No one is going to disagree with you on this. Avoiding ad hominem attacks
-      really help your case
+      (A) Nessuno sarà in disaccordo con te su questo. Evitare gli attacchi ad hominem aiuta davvero la tua tesi
 
-      (B) No one is going to disagree with you on this. Ad hominem attacks really
-      help your case'
-    target: (B)
-  - input: 'Which statement is sarcastic?
+      (B) Nessuno sarà in disaccordo con te su questo. Gli attacchi ad hominem aiutano davvero la tua tesi"
+    target_translated: (B)
+  - input_translated: "Quale affermazione è sarcastica?
 
-      Options:
+      Opzioni:
 
-      (A) Consistency in the league''s punishments? What do you think this is supposed
-      to be, politics?
+      (A) Coerenza nelle punizioni della lega? Cosa pensi che sia, politica?
 
-      (B) Consistency in the league''s punishments? What do you think this is supposed
-      to be, moral?'
-    target: (A)
+      (B) Coerenza nelle punizioni della lega? Cosa pensi che sia, morale?"
+    target_translated: (A)
 include: _fewshot_template_yaml
 task: leaderboard_bbh_snarks

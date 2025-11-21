@@ -1,20 +1,14 @@
 dataset_name: web_of_lies
-description: 'Evaluate a random boolean function expressed as a word problem.'
-doc_to_choice: ["Yes","No"]
+description: 'Valutare una funzione booleana casuale espressa come problema verbale.'
+doc_to_choice: ["Sì","No"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: 'Question: Fidel tells the truth. Jerry says Fidel tells the truth. Vina
-      says Jerry tells the truth. Millicent says Vina lies. Raymond says Millicent
-      lies. Does Raymond tell the truth?'
-    target: 'Yes'
-  - input: 'Question: Kristian lies. Millie says Kristian lies. Maybelle says Millie
-      tells the truth. Fidel says Maybelle lies. Leda says Fidel lies. Does Leda tell
-      the truth?'
-    target: 'Yes'
-  - input: 'Question: Kristian tells the truth. Michaela says Kristian lies. Raymond
-      says Michaela tells the truth. Osvaldo says Raymond tells the truth. Jamey says
-      Osvaldo tells the truth. Does Jamey tell the truth?'
-    target: 'No'
+  - input_translated: "Domanda: Fidel dice la verità. Jerry dice che Fidel dice la verità. Vina dice che Jerry dice la verità. Millicent dice che Vina mente. Raymond dice che Millicent mente. Raymond dice la verità?"
+    target_translated: "Sì"
+  - input_translated: "Domanda: Kristian mente. Millie dice che Kristian mente. Maybelle dice che Millie dice la verità. Fidel dice che Maybelle mente. Leda dice che Fidel mente. Leda dice la verità?"
+    target_translated: "Sì"
+  - input_translated: "Domanda: Kristian dice la verità. Michaela dice che Kristian mente. Raymond dice che Michaela dice la verità. Osvaldo dice che Raymond dice la verità. Jamey dice che Osvaldo dice la verità. Jamey dice la verità?"
+    target_translated: "No"
 include: _fewshot_template_yaml
 task: leaderboard_bbh_web_of_lies

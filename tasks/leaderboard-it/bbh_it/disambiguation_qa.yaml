@@ -1,10 +1,10 @@
 dataset_name: disambiguation_qa
-description: 'Clarify the meaning of sentences with ambiguous pronouns.'
+description: 'Chiarire il significato delle frasi con pronomi ambigui.'
 doc_to_choice: ["(A)", "(B)", "(C)"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: "Nelle seguenti frasi, spiega l’antecedente del pronome (a quale elemento si riferisce il pronome), oppure indica che è ambiguo.
+  - input_translated: "Nelle seguenti frasi, spiega l’antecedente del pronome (a quale elemento si riferisce il pronome), oppure indica che è ambiguo.
 
       Frase: Il capo disse al consigliere che loro avevano preso il giorno libero.
 
@@ -13,8 +13,8 @@ fewshot_config:
       (A) Il capo ha preso il giorno libero
       (B) Il consigliere ha preso il giorno libero
       (C) Ambiguo"
-    target: (A)
-  - input: "Nelle seguenti frasi, spiega l’antecedente del pronome (a quale elemento si riferisce il pronome), oppure indica che è ambiguo.
+    target_translated: (A)
+  - input_translated: "Nelle seguenti frasi, spiega l’antecedente del pronome (a quale elemento si riferisce il pronome), oppure indica che è ambiguo.
 
       Frase: Il manager ha inviato un messaggio alla segretaria, ma lui non ha ancora risposto.
 
@@ -23,8 +23,8 @@ fewshot_config:
       (A) La segretaria non ha ancora risposto
       (B) Il manager non ha ancora risposto
       (C) Ambiguo"
-    target: (A)
-  - input: "Nelle seguenti frasi, spiega l’antecedente del pronome (a quale elemento si riferisce il pronome), oppure indica che è ambiguo.
+    target_translated: (A)
+  - input_translated: "Nelle seguenti frasi, spiega l’antecedente del pronome (a quale elemento si riferisce il pronome), oppure indica che è ambiguo.
 
       Frase: Bailey ha intenzione di incontrare il direttore nel suo ufficio.
 
@@ -33,6 +33,6 @@ fewshot_config:
       (A) Sarà l’ufficio di Bailey
       (B) Sarà l’ufficio del direttore
       (C) Ambiguo"
-    target: (C)
+    target_translated: (C)
 include: _fewshot_template_yaml
 task: leaderboard_bbh_disambiguation_qa

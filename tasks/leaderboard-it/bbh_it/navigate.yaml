@@ -1,38 +1,37 @@
 dataset_name: navigate
-description: 'Given a series of navigation instructions, determine whether one would
-  end up back at the starting point.'
-doc_to_choice: ["Yes","No"]
+description: 'Date una serie di istruzioni di navigazione, determinare se si tornerà al punto di partenza.'
+doc_to_choice: ["Sì","No"]
 fewshot_config:
   sampler: first_n
   samples:
-  - input: 'If you follow these instructions, do you return to the starting point?
-      Turn left. Turn around. Turn left. Take 7 steps. Take 2 steps. Take 4 steps.
-      Take 8 steps.
+  - input_translated: "Se segui queste istruzioni, ritorni al punto di partenza?
+      Mantieni sempre la direzione frontale. Fai 2 passi a destra. Fai 9 passi a sinistra. Fai 7 passi a destra.
 
-      Options:
+      Opzioni:
 
-      - Yes
+      - Sì
 
-      - No'
-    target: 'No'
-  - input: 'If you follow these instructions, do you return to the starting point?
-      Turn around. Take 1 step. Take 6 steps. Turn around. Take 6 steps. Take 9 steps.
-      Take 1 step.
+      - No"
+    target_translated: 'Sì'
+  - input_translated: "Se segui queste istruzioni, ritorni al punto di partenza?
+      Gira a sinistra. Girati. Gira a sinistra. Fai 7 passi. Fai 2 passi. Fai 4 passi.
+      Fai 8 passi.
 
-      Options:
+      Opzioni:
 
-      - Yes
+      - Sì
 
-      - No'
-    target: 'No'
-  - input: 'If you follow these instructions, do you return to the starting point?
-      Always face forward. Take 2 steps right. Take 9 steps left. Take 7 steps right.
+      - No"
+    target_translated: 'No'
+  - input_translated: "Se segui queste istruzioni, ritorni al punto di partenza?
+      Girati. Fai 1 passo. Fai 6 passi. Girati. Fai 6 passi. Fai 9 passi.
+      Fai 1 passo.
 
-      Options:
+      Opzioni:
 
-      - Yes
+      - Sì
 
-      - No'
-    target: 'Yes'
+      - No"
+    target_translated: 'No'
 include: _fewshot_template_yaml
 task: leaderboard_bbh_navigate
