@@ -1,7 +1,7 @@
 task: itabench_leaderboard_math_hard_it
 dataset_name: null
 
-dataset_path: MinervaV2/MATH-Hard-italian
+dataset_path: sapienzanlp/MATH_hard_italian
 
 process_docs: !function utils.process_docs
 output_type: generate_until

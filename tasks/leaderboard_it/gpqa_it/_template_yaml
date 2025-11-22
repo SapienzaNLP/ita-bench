@@ -1,4 +1,4 @@
-dataset_path: MinervaV2/gpqa-italian
+dataset_path: sapienzanlp/gpqa_italian
 output_type: multiple_choice
 process_docs: !function utils.process_docs
 training_split: test

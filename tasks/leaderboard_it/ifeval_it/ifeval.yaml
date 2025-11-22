@@ -2,7 +2,7 @@ task: itabench_leaderboard_ifeval_it
 
 ## DATASET ##
 dataset_name: null
-dataset_path: MinervaV2/ifeval_ita_fixed
+dataset_path: sapienzanlp/IFEval_italian
 test_split: train
 
 ## PROMPT & ANSWERING ##

@@ -1,4 +1,4 @@
-dataset_path: MinervaV2/MUSR_italian
+dataset_path: sapienzanlp/MUSR_italian
 output_type: multiple_choice
 doc_to_text: !function utils.doc_to_text
 doc_to_target: "{{answer_choice}}"
