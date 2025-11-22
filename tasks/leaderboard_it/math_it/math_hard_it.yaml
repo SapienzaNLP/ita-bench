@@ -1,4 +1,4 @@
-task: leaderboard_math_hard_it
+task: itabench_leaderboard_math_hard_it
 dataset_name: null
 
 dataset_path: MinervaV2/MATH-Hard-italian

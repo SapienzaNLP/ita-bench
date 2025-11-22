@@ -1,4 +1,4 @@
-group: leaderboard_bbh
+group: itabench_leaderboard_bbh_it
 task:
   - leaderboard_bbh_boolean_expressions
   - leaderboard_bbh_causal_judgement

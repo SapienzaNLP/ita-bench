@@ -1,4 +1,4 @@
-group: leaderboard_gpqa_it
+group: itabench_leaderboard_gpqa_it
 task:
   - leaderboard_gpqa_diamond_it
   - leaderboard_gpqa_extended_it

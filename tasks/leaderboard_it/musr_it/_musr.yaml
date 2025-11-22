@@ -1,4 +1,4 @@
-group: leaderboard_musr_it
+group: itabench_leaderboard_musr_it
 task:
   - leaderboard_musr_murder_mysteries_it
   - leaderboard_musr_object_placements_it

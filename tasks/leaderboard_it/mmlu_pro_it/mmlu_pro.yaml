@@ -1,4 +1,4 @@
-task: leaderboard_mmlu_pro_it
+task: itabench_leaderboard_mmlu_pro_it
 
 dataset_path: li-lab/MMLU-ProX
 dataset_name: it
