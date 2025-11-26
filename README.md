@@ -139,3 +139,4 @@ If you use this benchmark or part of it, consider to cite us:
 * [Unbabel](https://unbabel.com/) for building Tower-LLM.
 * Thanks to the authors of the original datasets for making them available.
 * Thanks to all the [Multilingual Natural Language Processing](http://naviglinlp.blogspot.com/) course students of the Master's of Engineering in Computer Science (Dipartimento di Ingegneria Informatica, Automatica e Gestionale, DIAG) of Sapienza University of Rome for their help in adapting some datasets.
+* Thanks to Domenico Fedele (fedele@babelscape.com) for helping in the implementation of italian leaderboard in ITA-Bench.
