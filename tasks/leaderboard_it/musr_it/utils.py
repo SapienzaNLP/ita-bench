@@ -6,7 +6,7 @@ def doc_to_choice(doc) -> list[str]:
     return doc["choice_translations"]
 
 
-DOC_TO_TEXT = "{narrative}\n\n" "{question}\n\n" "{choices}\n" "Answer:"
+DOC_TO_TEXT = "{narrative}\n\n" "{question}\n\n" "{choices}\n" "Risposta:"
 
 
 def doc_to_text(doc) -> str:
