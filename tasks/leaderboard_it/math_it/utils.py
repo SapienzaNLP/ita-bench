@@ -37,7 +37,7 @@ def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:
             out_doc["few_shot"] = True
         return out_doc
 
-    return dataset.map(_process_doc).remove_columns(['problem_translation', 'solution_translation']).select(list(range(300)))
+    return dataset.map(_process_doc).remove_columns(['problem_translation', 'solution_translation'])
 
 
 def list_fewshot_samples() -> list[dict]:
