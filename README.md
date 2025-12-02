@@ -21,11 +21,6 @@ The datasets are divided into three main categories:
     - **Cons**: These datasets were not originally designed for evaluating LLMs and the adaptation process may introduce biases or errors
 
 3. 🤗 **Leaderboard**: These datasets originate from the archived HuggingFace leaderboard ([LINK](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)). We reintroduce the leaderboard’s tasks in Italian, using existing Italian resources (e.g. MMLU-PROX, and IFEval-ITA) when available, and translating the remaining datasets with an open-source model.
-    - **Pros:** This Italian adaptation supports fairer evaluation of LLMs by comparing their competencies in both English and Italian.
-    - **Cons:** Automatically translating datasets that lack Italian versions may introduce biases or translation errors.
-
-
-
 
 
 ITA-Bench currently includes the following datasets:
