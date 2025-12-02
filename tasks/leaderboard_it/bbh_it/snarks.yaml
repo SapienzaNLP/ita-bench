@@ -1,0 +1,39 @@
+dataset_name: snarks
+description: "Determina quale delle due frasi è sarcastica.
+
+      Secondo il Cambridge University Dictionary, il sarcasmo è: 
+      
+      l'uso di osservazioni che significano chiaramente l'opposto di ciò che dicono, fatte allo scopo di ferire i sentimenti di qualcuno
+      o di criticare qualcosa in modo umoristico. 
+      
+      Le frasi sarcastiche contengono spesso espressioni satiriche o ironiche, iperboli, osservazioni ambivalenti o spiritose."
+doc_to_choice: ["(A)","(B)"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "Quale affermazione è sarcastica?
+
+      Opzioni:
+
+      (A) Sì, perché avere interessi e informarsi attivamente su di essi è un enorme spreco
+
+      (B) Sì, perché avere interessi e informarsi attivamente su di essi è una cosa enorme"
+    target_translated: (A)
+  - input_translated: "Quale affermazione è sarcastica?
+
+      Opzioni:
+
+      (A) Nessuno sarà in disaccordo con te su questo. Evitare gli attacchi ad hominem aiuta davvero la tua tesi
+
+      (B) Nessuno sarà in disaccordo con te su questo. Gli attacchi ad hominem aiutano davvero la tua tesi"
+    target_translated: (B)
+  - input_translated: "Quale affermazione è sarcastica?
+
+      Opzioni:
+
+      (A) Coerenza nelle punizioni della lega? Cosa pensi che sia, politica?
+
+      (B) Coerenza nelle punizioni della lega? Cosa pensi che sia, morale?"
+    target_translated: (A)
+include: _fewshot_template_yaml
+task: leaderboard_bbh_snarks

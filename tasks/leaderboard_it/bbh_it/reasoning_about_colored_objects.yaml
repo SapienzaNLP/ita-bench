@@ -1,0 +1,66 @@
+dataset_name: reasoning_about_colored_objects
+description: 'Rispondi a domande estremamente semplici sui colori degli oggetti su una superficie.'
+doc_to_choice: ["(A)","(B)","(C)","(D)","(E)","(F)","(G)","(H)","(I)","(J)","(K)","(L)","(M)","(N)","(O)","(P)","(Q)","(R)"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "Sul comodino c’è una matita rossa, una tazza viola, un portachiavi bordeaux, un orsacchiotto fucsia, un piatto nero e una pallina antistress blu. Di che colore è la pallina antistress?
+
+      Opzioni:
+
+      (A) rosso
+      (B) arancione
+      (C) giallo
+      (D) verde
+      (E) blu
+      (F) marrone
+      (G) magenta
+      (H) fucsia
+      (I) malva
+      (J) teal
+      (K) turchese
+      (L) bordeaux
+      (M) argento
+      (N) oro
+      (O) nero
+      (P) grigio
+      (Q) viola
+      (R) rosa"
+    target_translated: (E)
+  - input_translated: "Sul tavolo vedi una serie di oggetti disposti in fila: una graffetta viola, una pallina antistress rosa, un portachiavi marrone, uno scrunchie/caricatore verde, un fidget spinner malva e una penna bordeaux. Qual è il colore dell’oggetto direttamente a destra della pallina antistress?
+
+      Opzioni:
+
+      (A) rosso
+      (B) arancione
+      (C) giallo
+      (D) verde
+      (E) blu
+      (F) marrone
+      (G) magenta
+      (H) fucsia
+      (I) malva
+      (J) teal
+      (K) turchese
+      (L) bordeaux
+      (M) argento
+      (N) oro
+      (O) nero
+      (P) grigio
+      (Q) viola
+      (R) rosa"
+    target_translated: (F)
+  - input_translated: "Sul comodino vedi i seguenti oggetti disposti in fila: un piatto teal, un portachiavi bordeaux, uno scrunchie/caricatore giallo, una tazza arancione, un quaderno rosa e una tazza grigia. Quanti oggetti non arancioni vedi alla sinistra dell’oggetto teal?
+
+      Opzioni:
+
+      (A) zero
+      (B) uno
+      (C) due
+      (D) tre
+      (E) quattro
+      (F) cinque
+      (G) sei"
+    target_translated: (A)
+include: _fewshot_template_yaml
+task: leaderboard_bbh_reasoning_about_colored_objects

@@ -20,6 +20,14 @@ The datasets are divided into two main categories:
     - **Pros**: The original datasets are already in Italian, so there is no need for translation that may introduce errors
     - **Cons**: These datasets were not originally designed for evaluating LLMs and the adaptation process may introduce biases or errors
 
+3. 🤗 **Leaderboard**: These datasets originate from the archived HuggingFace leaderboard ([LINK](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)). We reintroduce the leaderboard’s tasks in Italian, using existing Italian resources (e.g. MMLU-PROX, and IFEval-ITA) when available, and translating the remaining datasets with an open-source model.
+    - **Pros:** This Italian adaptation supports fairer evaluation of LLMs by comparing their competencies in both English and Italian.
+    - **Cons:** Automatically translating datasets that lack Italian versions may introduce biases or translation errors.
+
+
+
+
+
 ITA-Bench currently includes the following datasets:
 | Dataset | Task | Type | Description |
 |---------|------|------|-------------|
@@ -40,7 +48,13 @@ ITA-Bench currently includes the following datasets:
 | [PreLearn](https://sites.google.com/view/prelearn20/home) | QA | 🔨 Adaptation | Reasoning about concept relationships |
 | [PreTens](https://sites.google.com/view/semeval2022-pretens) | QA | 🔨 Adaptation | Reasoning about concept relationships |
 | [QuandHO](https://dh.fbk.eu/2016/03/quandho-question-answering-data-for-italian-history/) | QA | 🔨 Adaptation | Reading comprehension |
-| [WiC](https://wic-ita.github.io/) | QA | 🔨 Adaptation | Word sense disambiguation |
+| [BBH](https://huggingface.co/datasets/SaylorTwift/bbh) | QA | 🤗 Leaderboard | Hard and complex question on several domains |
+| [MATH](https://huggingface.co/datasets/lighteval/MATH-Hard) | QA | 🤗 Leaderboard | Complex mathematical problems |
+| [MMLU-PRO](https://huggingface.co/datasets/li-lab/MMLU-ProX) | QA | 🤗 Leaderboard | Advanced questions with 10 possible choices |
+| [MUSR](https://huggingface.co/datasets/TAUR-Lab/MuSR) | QA | 🤗 Leaderboard | Multi-step reasoning with commonsense |
+| [GPQA](https://huggingface.co/datasets/Idavidrein/gpqa) | QA | 🤗 Leaderboard | Hard question in biology, physics, and chemistry |
+| [IFEval](https://huggingface.co/datasets/google/IFEval) | IF | 🤗 Leaderboard | Instruction Following |
+
 
 
 ## How to use ITA-Bench
@@ -77,7 +91,7 @@ lm_eval \
   --num_fewshot 0 \
   --log_samples \
   --output_path outputs/ \
-  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc \
+  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc,itabench_leaderboard_it \
   --include tasks
 ```
 This command will evaluate `meta-llama/Meta-Llama-3.1-8B-Instruct` on all the benchmarks in our suite. The results will be saved in the `outputs/` directory.
@@ -91,7 +105,7 @@ accelerate launch -m lm_eval \
   --num_fewshot 0 \
   --log_samples \
   --output_path outputs/ \
-  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc
+  --tasks itabench_trans_it-it,itabench_adapt_cloze,itabench_adapt_mc,itabench_leaderboard_it
 ```
 
 > [!NOTE]

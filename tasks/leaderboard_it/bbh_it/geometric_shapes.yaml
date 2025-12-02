@@ -1,0 +1,54 @@
+dataset_name: geometric_shapes
+description: 'Assegna un nome alle forme geometriche partendo dai loro percorsi SVG.'
+doc_to_choice: ["(A)","(B)","(C)","(D)","(E)","(F)","(G)","(H)","(I)","(J)","(K)"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "L'elemento SVG path <path d=\"M 31.00,73.00 L 32.00,59.00 L 44.00,50.00 L 49.00,41.00 L 64.00,37.00 L 71.00,55.00 L 64.00,76.00 L 52.00,61.00 L 31.00,73.00\"/>
+      disegna un
+
+      Opzioni:
+
+      (A) cerchio
+      (B) eptagono
+      (C) esagono
+      (D) aquilone
+      (E) linea
+      (F) ottagono
+      (G) pentagono
+      (H) rettangolo
+      (I) settore
+      (J) triangolo" 
+    target_translated: (F)
+  - input_translated: "L'elemento SVG path <path d=\"M 14.19,26.04 L 51.43,39.21 L 58.44,36.69 L 56.63,30.17 L 48.53,26.66 L 14.19,26.04\"/> disegna un
+
+      Opzioni:
+
+      (A) cerchio
+      (B) eptagono
+      (C) esagono
+      (D) aquilone
+      (E) linea
+      (F) ottagono
+      (G) pentagono
+      (H) rettangolo
+      (I) settore
+      (J) triangolo"
+    target_translated: (G)
+  - input_translated: "L'elemento SVG path <path d=\"M 41.00,43.00 L 37.00,34.00 L 41.00,33.00 L 45.00,34.00 L 41.00,43.00\"/> disegna un
+
+      Opzioni:
+
+      (A) cerchio
+      (B) eptagono
+      (C) esagono
+      (D) aquilone
+      (E) linea
+      (F) ottagono
+      (G) pentagono
+      (H) rettangolo
+      (I) settore
+      (J) triangolo"
+    target_translated: (D)
+include: _fewshot_template_yaml
+task: leaderboard_bbh_geometric_shapes

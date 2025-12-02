@@ -1,0 +1,14 @@
+dataset_name: sports_understanding
+description: 'Determina se una frase costruita artificialmente relativa allo sport è plausibile o meno.'
+doc_to_choice: ["sì","no"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: È plausibile la seguente frase? "Bam Adebayo ha segnato un reverse layup nelle finali della Western Conference."
+    target_translated: 'sì'
+  - input_translated: È plausibile la seguente frase? "Santi Cazorla ha segnato un touchdown."
+    target_translated: 'no'
+  - input_translated: È plausibile la seguente frase? "DeMar DeRozan è stato chiamato per goaltending."
+    target_translated: 'sì'
+include: _fewshot_template_yaml
+task: leaderboard_bbh_sports_understanding

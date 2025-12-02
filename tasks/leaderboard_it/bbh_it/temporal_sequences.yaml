@@ -1,0 +1,87 @@
+dataset_name: temporal_sequences
+description: "Descrizione dell'attività: rispondere a domande su in quali momenti potrebbero essersi verificati determinati eventi."
+doc_to_choice: ["(A)","(B)","(C)","(D)"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "Oggi Emily è andata al museo. Tra quali orari ci sarebbe potuta andare?
+
+      Sappiamo che:
+
+      Emily si è svegliata alle 13:00.
+
+      Elizabeth ha visto Emily leggere in biblioteca dalle 14:00 alle 16:00.
+
+      Jessica ha visto Emily guardare un film al cinema dalle 16:00 alle 17:00.
+
+      Leslie ha visto Emily aspettare all’aeroporto dalle 17:00 alle 18:00.
+
+      William ha visto Emily comprare vestiti al centro commerciale dalle 18:00 alle 19:00.
+
+      Il museo era chiuso dopo le 19:00.
+
+      Tra quali orari Emily avrebbe potuto andare al museo?
+
+      Opzioni:
+
+      (A) 13:00-14:00
+      (B) 18:00-19:00
+      (C) 17:00-18:00
+      (D) 14:00-16:00"
+    target_translated: (A)
+  - input_translated: "Oggi Elizabeth è andata al parco divertimenti. Tra quali orari ci sarebbe potuta andare?
+
+      Sappiamo che:
+
+      Elizabeth si è svegliata alle 7:00.
+
+      David ha visto Elizabeth riparare il suo computer al negozio di elettronica dalle 13:00 alle 14:00.
+
+      Sarah ha visto Elizabeth giocare a tennis al campo da tennis dalle 14:00 alle 15:00.
+
+      Susan ha visto Elizabeth camminare verso la Statua della Libertà dalle 15:00 alle 18:00.
+
+      Andrew ha visto Elizabeth fare foto vicino alla Torre Eiffel dalle 18:00 alle 21:00.
+
+      Emily ha visto Elizabeth prendere un caffè al bar dalle 21:00 alle 22:00.
+
+      Il parco divertimenti era chiuso dopo le 22:00.
+
+      Tra quali orari Elizabeth avrebbe potuto andare al parco divertimenti?
+
+      Opzioni:
+
+      (A) 7:00-13:00
+      (B) 21:00-22:00
+      (C) 13:00-14:00
+      (D) 15:00-18:00"
+    target_translated: (A)
+  - input_translated: "Oggi Tiffany è andata in spiaggia. Tra quali orari ci sarebbe potuta andare?
+
+      Sappiamo che:
+
+      Tiffany si è svegliata alle 5:00.
+
+      Betty ha visto Tiffany prendere un caffè al bar dalle 5:00 alle 6:00.
+
+      Jessica ha visto Tiffany lavorare in ufficio dalle 6:00 alle 9:00.
+
+      John ha visto Tiffany fare stretching in uno studio di yoga dalle 9:00 alle 12:00.
+
+      Sean ha visto Tiffany seduta su un rooftop dalle 12:00 alle 14:00.
+
+      Sarah ha visto Tiffany giocare a tennis al campo da tennis dalle 14:00 alle 15:00.
+
+      La spiaggia era chiusa dopo le 16:00.
+
+      Tra quali orari Tiffany avrebbe potuto andare in spiaggia?
+
+      Opzioni:
+
+      (A) 9:00-12:00
+      (B) 12:00-14:00
+      (C) 5:00-6:00
+      (D) 15:00-16:00"
+    target_translated: (D)
+include: _fewshot_template_yaml
+task: leaderboard_bbh_temporal_sequences

@@ -1,0 +1,38 @@
+dataset_name: tracking_shuffled_objects_three_objects
+description: 'Un compito che richiede di determinare le posizioni finali di un insieme di oggetti date le loro posizioni iniziali e una descrizione di una sequenza di scambi.'
+doc_to_choice: ["(A)","(B)","(C)"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "Alice, Bob e Claire stanno giocando a un gioco. All’inizio del gioco, ognuno di loro ha una palla: Alice ha una palla gialla, Bob ha una palla blu e Claire ha una palla rosa.
+
+      Man mano che il gioco procede, le coppie di giocatori si scambiano le palle. Per prima cosa, Claire e Alice si scambiano le palle. Poi, Alice e Bob si scambiano le palle. Infine, Claire e Bob si scambiano le palle. Alla fine del gioco, Bob ha la
+
+      Opzioni:
+
+      (A) palla gialla
+      (B) palla blu
+      (C) palla rosa"
+    target_translated: (A)
+  - input_translated: "Alice, Bob e Claire stanno giocando a un gioco. All’inizio del gioco, ognuno di loro ha una palla: Alice ha una palla bianca, Bob ha una palla viola e Claire ha una palla rosa.
+
+      Man mano che il gioco procede, le coppie di giocatori si scambiano le palle. Per prima cosa, Bob e Alice si scambiano le palle. Poi, Bob e Claire si scambiano le palle. Infine, Bob e Alice si scambiano di nuovo le palle. Alla fine del gioco, Alice ha la
+
+      Opzioni:
+
+      (A) palla bianca
+      (B) palla viola
+      (C) palla rosa"
+    target_translated: (C)
+  - input_translated: "Alice, Bob e Claire sono ballerini in una square dance. All’inizio di una canzone, ognuno di loro ha un partner: Alice balla con Lola, Bob balla con Rodrigo e Claire balla con Patrick.
+
+      Durante la canzone, i ballerini cambiano spesso partner. Per prima cosa, Alice e Bob si scambiano i partner. Poi, Claire e Bob si scambiano i partner. Infine, Bob e Alice si scambiano di nuovo i partner. Alla fine del ballo, Alice sta ballando con
+
+      Opzioni:
+
+      (A) Lola
+      (B) Rodrigo
+      (C) Patrick"
+    target_translated: (C)
+include: _fewshot_template_yaml
+task: leaderboard_bbh_tracking_shuffled_objects_three_objects

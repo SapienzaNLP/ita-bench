@@ -1,0 +1,9 @@
+group: itabench_leaderboard_gpqa_it
+task:
+  - leaderboard_gpqa_diamond_it
+  - leaderboard_gpqa_extended_it
+  - leaderboard_gpqa_main_it
+aggregate_metric_list:
+  - metric: acc_norm
+    aggregation: mean
+    weight_by_size: true

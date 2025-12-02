@@ -1,0 +1,14 @@
+dataset_name: boolean_expressions
+description: "Valuta il risultato di un'espressione booleana casuale."
+doc_to_choice: ["Falso", "Vero"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: no ( ( no no Vero ) ) è
+    target_translated: 'Falso'
+  - input_translated: Vero e Falso e no Vero e Vero è
+    target_translated: 'Falso'
+  - input_translated: no no ( no ( Falso ) ) è
+    target_translated: 'Vero'
+include: _fewshot_template_yaml
+task: leaderboard_bbh_boolean_expressions

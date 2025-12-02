@@ -1,0 +1,40 @@
+dataset_name: date_understanding
+description: 'Dedurre la data dal contesto.'
+doc_to_choice: ["(A)", "(B)", "(C)", "(D)", "(E)", "(F)"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "Oggi è la Vigilia di Natale del 1937. Qual è la data di 10 giorni fa in MM/DD/YYYY?
+
+      Opzioni:
+
+      (A) 12/14/2026
+      (B) 12/14/1950
+      (C) 12/14/2007
+      (D) 12/14/1937
+      (E) 07/14/1938
+      (F) 12/14/1988"
+    target_translated: (D)
+  - input_translated: "Domani è l’11/12/2019. Qual è la data di un anno fa rispetto a oggi in MM/DD/YYYY?
+
+      Opzioni:
+
+      (A) 09/04/2018
+      (B) 11/11/2018
+      (C) 08/25/2018
+      (D) 11/02/2018
+      (E) 11/04/2018"
+    target_translated: (B)
+  - input_translated: "Jane e John si sono sposati il 2 gennaio 1958. Oggi è il loro quinto anniversario. Qual è la data di domani in MM/DD/YYYY?
+
+      Opzioni:
+
+      (A) 01/11/1961
+      (B) 01/03/1963
+      (C) 01/18/1961
+      (D) 10/14/1960
+      (E) 01/03/1982
+      (F) 12/03/1960"
+    target_translated: (B)
+include: _fewshot_template_yaml
+task: leaderboard_bbh_date_understanding

@@ -1,0 +1,14 @@
+dataset_name: web_of_lies
+description: 'Valutare una funzione booleana casuale espressa come problema verbale.'
+doc_to_choice: ["Sì","No"]
+fewshot_config:
+  sampler: first_n
+  samples:
+  - input_translated: "Domanda: Fidel dice la verità. Jerry dice che Fidel dice la verità. Vina dice che Jerry dice la verità. Millicent dice che Vina mente. Raymond dice che Millicent mente. Raymond dice la verità?"
+    target_translated: "Sì"
+  - input_translated: "Domanda: Kristian mente. Millie dice che Kristian mente. Maybelle dice che Millie dice la verità. Fidel dice che Maybelle mente. Leda dice che Fidel mente. Leda dice la verità?"
+    target_translated: "Sì"
+  - input_translated: "Domanda: Kristian dice la verità. Michaela dice che Kristian mente. Raymond dice che Michaela dice la verità. Osvaldo dice che Raymond dice la verità. Jamey dice che Osvaldo dice la verità. Jamey dice la verità?"
+    target_translated: "No"
+include: _fewshot_template_yaml
+task: leaderboard_bbh_web_of_lies
