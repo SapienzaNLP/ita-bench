@@ -207,10 +207,10 @@ def is_equiv(x1: str, x2: str) -> bool:
 
 
 def get_unnormalized_answer(text: str) -> str:
-    end_seq = "I hope it is correct."
+    end_seq = "Spero che sia corretta."
     text += end_seq
     match = re.search(
-        r"Final Answer: The final answer is(.*?). I hope it is correct.",
+        r"Risposta finale: La risposta finale è (.*?). Spero che sia corretta.",
         text,
     )
     if match:
