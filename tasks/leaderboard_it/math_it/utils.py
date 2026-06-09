@@ -220,15 +220,17 @@ def get_unnormalized_answer(text: str) -> str:
 
 
 SUBSTITUTIONS = [
-    ("an ", ""),
-    ("a ", ""),
+    ("un ", ""),
+    ("uno ", ""),
+    ("una ", ""),
+    ("un'", ""),
     (".$", "$"),
     ("\\$", ""),
     (r"\ ", ""),
     (" ", ""),
     ("mbox", "text"),
-    (",\\text{and}", ","),
-    ("\\text{and}", ","),
+    (",\\text{e}", ","),
+    ("\\text{e}", ","),
     ("\\text{m}", "\\text{}"),
 ]
 REMOVED_EXPRESSIONS_IT = [
@@ -288,7 +290,7 @@ def normalize_final_answer(final_answer: str) -> str:
 
     for before, after in SUBSTITUTIONS:
         final_answer = final_answer.replace(before, after)
-    for expr in REMOVED_EXPRESSIONS:
+    for expr in REMOVED_EXPRESSIONS_IT:
         final_answer = final_answer.replace(expr, "")
 
     # Extract answer that is in LaTeX math, is bold,
