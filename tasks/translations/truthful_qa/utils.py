@@ -36,11 +36,18 @@ def process_docs(
         query = QUERY_PREFIX[source_language].format(input=input)
         query += ANSWER_PREFIX[target_language]
 
+        gold = doc["label"][mc_type]
+        if mc_type == "mc1":
+            # mc1 has exactly one true answer. lm-eval reads a list target as the set
+            # of correct choice indices, so give it the index of that answer instead
+            # of the 0/1 labels.
+            gold = list(gold).index(1)
+
         return {
             "id": doc["id"],
             "query": query,
             "choices": choices,
-            "gold": doc["label"][mc_type],
+            "gold": gold,
         }
 
     return dataset.map(_process_doc)
